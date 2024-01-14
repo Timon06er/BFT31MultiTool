@@ -1,8 +1,8 @@
 1. [Aufteilung](#projekt-und-branchaufteilung)
 2. [Anforderungen](#anforderungen)
 3. [Richtlinien](#richtlinien)  
-- [Mergekonflikte](#mergekonflikte-vermeiden)  
-- [Organisation](#organisation)  
+4. [Mergekonflikte](#mergekonflikte-vermeiden)  
+5. [Organisation](#organisation)  
 
 
 # MultiTool
