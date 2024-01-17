@@ -52,10 +52,10 @@ Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, z
 |		                |           |Entwickler	      |         |Feature9              |
 |		                |           |Entwickler       |         |Feature10             |		
 |		                |	          |                 |         |                      |				
-|**Informatik**	    |Menü IT    |Teamkoordinator  |         |ITEntwicklung,Feature11|				
-|		                |	          |Entwickler       |		      |Feature12             |		
-|		                |	          |Entwickler       |         |Feature13             |	
-|		                |	          |Entwickler       |  	      |Feature14             |			
+|**Informatik**	    |Menü IT    |Teamkoordinator  |    @zhiqiangc67     |ITEntwicklung,Feature11|				
+|		                |	   Password Checker       |Entwickler       |		@Timon06er      |Feature12             |		
+|		                |	          |Entwickler       |   @Speed-king      |Feature13             |	
+|		                |	          |Entwickler       |  @LucMey	      |Feature14             |			
 |		                |	          |Entwickler       |         |Feature15             |			
 |		                |	          |	                |		      |		                   |				
 |**Wirtschaft**	    |Menü WI    |Teamkoordinator  |	        |WIEntwicklung,Feature16|				
