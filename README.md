@@ -58,11 +58,11 @@ Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, z
 |		                |	          |Entwickler       |  	      |Feature14             |			
 |		                |	          |Entwickler       |         |Feature15             |			
 |		                |	          |	                |		      |		                   |				
-|**Wirtschaft**	    |Menü WI    |Teamkoordinator  |	        |WIEntwicklung,Feature16|				
-|		                |           |Entwickler       |         |Feature17             |		
-|		                |	          |Entwickler       |		      |Feature18             |		
-|		                |	          |Entwickler       |         |Feature19             |	
-|		                |	          |Entwickler       |	        |Feature20             |	
+|**Wirtschaft**	    |Menü WI    |Teamkoordinator  |@Amannat01|WIEntwicklung,Feature16|				
+|		                |           |Entwickler       |@MuhammedTR38|Feature17         |		
+|		                |	          |Entwickler       |@brianbmc16|Feature18           |		
+|		                |	          |Entwickler       |@Mamedderficker|Feature19       |	
+|		                |	          |Entwickler       |@Salemweeyo|Feature20           |	
 |		                |	          |	              	|		      |                   	 |					
 |**Mathematik**	    |Menü MT    |Teamkoordinator  |         |MAEntwicklung,Feature21|				
 |		                |           |Entwickler       |         |Feature22             |		
