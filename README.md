@@ -46,9 +46,9 @@ Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, z
 |                   |           |Entwickler       |         |Feature4              |
 |                   |           |Entwickler       |         |Feature5              |
 |		                |	          |              		|		      |		                   |		
-|**Physik**	        |Menü PY 	  |Teamkoordinator  | @anastasiiakhalaim |PHEntwicklung	,Feature6| Volumen Von Würfeln, Kugeln, Pyramiden, und Prismen
-|		                |           |Entwickler	      | @Alexknoppik       |Feature7   |	Gewicht auf anderen Planeten Berechnen	
-|		                |	          |Entwickler	      | @yagmurergin        |Feature8  |  Infos zur aufbau und struktur der Materie
+|**Physik**	        |Menü PY 	  |Teamkoordinator  | @anastasiiakhalaim |PHEntwicklung	,Feature6 Volumen Von Würfeln, Kugeln, Pyramiden, und Prismen|
+|		                |           |Entwickler	      | @Alexknoppik       |Feature7 	Gewicht auf anderen Planeten Berechnen  |	Gewicht auf anderen Planeten Berechnen	
+|		                |	          |Entwickler	      | @yagmurergin        |Feature8  Infos zur aufbau und struktur der Materie | 
 |		                |           |Entwickler	      | @EnderK58        |Feature9     |  
 |		                |           |Entwickler       |         |Feature10             |		
 |		                |	          |                 |         |                      |				
