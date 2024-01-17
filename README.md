@@ -47,7 +47,7 @@ Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, z
 |                   |           |Entwickler       |         |Feature5              |
 |		                |	          |              		|		      |		                   |		
 |**Physik**	        |Menü PY 	  |Teamkoordinator  |         |PHEntwicklung	,Feature6|
-|		                |           |Entwickler	      |         |Feature7              |		
+|		                |           |Entwickler	      | @Alexknoppik        |Feature7              |		
 |		                |	          |Entwickler	      |         |Feature8              |
 |		                |           |Entwickler	      |         |Feature9              |
 |		                |           |Entwickler       |         |Feature10             |		
