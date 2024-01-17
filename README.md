@@ -38,7 +38,7 @@ Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, z
 
 | Bereich     	    | Feature 	|Rolle		        |Username	|Branch		             |
 | --------------- 	| -------- 	|------		        |--------	|-----------	         |
-|**Administration**	|Release    |Administrator		| @AI-Assistant |Release, main         |
+|**Administration**	|Release    |Administrator		| @AI-Assistant |Release, main   |
 |		                |	          |		              |      		|		                   |		
 |**Elektrotechnik**	|Menü ET    |Teamkoordinator  |         |ETEntwicklung,Feature1|
 |                   |           |Entwickler       |         |Feature2              |
@@ -46,10 +46,10 @@ Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, z
 |                   |           |Entwickler       |         |Feature4              |
 |                   |           |Entwickler       |         |Feature5              |
 |		                |	          |              		|		      |		                   |		
-|**Physik**	        |Menü PY 	  |Teamkoordinator  |         |PHEntwicklung	,Feature6|
-|		                |           |Entwickler	      |         |Feature7              |		
-|		                |	          |Entwickler	      |         |Feature8              |
-|		                |           |Entwickler	      |         |Feature9              |
+|**Physik**	        |Menü PY 	  |Teamkoordinator  | @anastasiiakhalaim        |PHEntwicklung	,Feature6|
+|		                |           |Entwickler	      | @Alexknoppik       |Feature7   |		
+|		                |	          |Entwickler	      | @yagmurergin        |Feature8  |
+|		                |           |Entwickler	      | @EnderK58        |Feature9     |
 |		                |           |Entwickler       |         |Feature10             |		
 |		                |	          |                 |         |                      |				
 |**Informatik**	    |Menü IT    |Teamkoordinator  |         |ITEntwicklung,Feature11|				
