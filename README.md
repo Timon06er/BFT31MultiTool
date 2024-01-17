@@ -52,8 +52,8 @@ Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, z
 |		                |           |Entwickler	      |         |Feature9              |
 |		                |           |Entwickler       |         |Feature10             |		
 |		                |	          |                 |         |                      |				
-|**Informatik**	    |Menü IT    |Teamkoordinator  |         |ITEntwicklung,Feature11|				
-|		                |	          |Entwickler       |		      |Feature12             |		
+|**Informatik**	    |Menü IT    |Teamkoordinator  |   @zhiqiangc67      |ITEntwicklung,Feature11|				
+|		                |	Pasword Checker          |Entwickler       |		      |Feature12             |		
 |		                |	          |Entwickler       |         |Feature13             |	
 |		                |	          |Entwickler       |  	      |Feature14             |			
 |		                |	          |Entwickler       |         |Feature15             |			
