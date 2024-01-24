@@ -1,0 +1,15 @@
+namespace MAKlassenBibliothek;
+
+internal class Feature1
+{
+    internal static void Feature_12()
+    {
+        Console.WriteLine("Test Feature 12"); 
+        //Diese Ausgabe hilft Ihnen zu erkennen ob der Aufruf funktioniert.
+    }
+}
+case "12":
+   Console.Clear();
+   //Hier Feature1 aufrufen
+   Feature1.Feature_12();
+   break;
