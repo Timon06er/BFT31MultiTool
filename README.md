@@ -40,15 +40,15 @@ Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, z
 | --------------- 	| -------- 	|------		        |--------	|-----------	         |
 |**Administration**	|Release    |Administrator		| @AI-Assistant |Release, main   |
 |		                |	          |		              |      		|		                   |		
-|**Elektrotechnik**	|Menü ET    |Teamkoordinator  |         |ETEntwicklung,Feature1|
+|**Elektrotechnik**	|Menü ET/Spannungsfall|Teamkoordinator  |@Timsolo0408|ETEntwicklung,Feature1|
 |                   |Leitungsquerschnittberechnen|Entwickler       |@Ilkan827|Feature2              |
-|                   |           |Entwickler       |         |Feature3              |
-|                   |           |Entwickler       |         |Feature4              |
+|                   |Widerstand/Spule|Entwickler       |@Dokihappy|Feature3              |
+|                   |Kondensator/Ohmsches/Gesetz​/Leistungsgesetz|Entwickler       |@Salaabbad|Feature4              |
 |                   |           |Entwickler       |         |Feature5              |
 |		                |	          |              		|		      |		                   |		
-|**Physik**	        |Menü PY 	  |Teamkoordinator  | @anastasiiakhalaim |PHEntwicklung	,Feature6 Volumen Von Würfeln, Kugeln, Pyramiden, und Prismen|
-|		                |           |Entwickler	      | @Alexknoppik       |Feature7 	Gewicht auf anderen Planeten Berechnen  |	Gewicht auf anderen Planeten Berechnen	
-|		                |	          |Entwickler	      | @yagmurergin        |Feature8  Infos zur aufbau und struktur der Materie | 
+|**Physik**	        |Menü PY6 Volumen Von Würfeln, Kugeln, Pyramiden, und Prismen 	  |Teamkoordinator  | @anastasiiakhalaim |PHEntwicklung	,Feature|
+|		                | Gewicht auf anderen Planeten Berechnen           |Entwickler	      | @Alexknoppik       |Feature7 	 |	
+|		                |	  Infos zur aufbau und struktur der Materie         |Entwickler	      | @yagmurergin        |Feature8  | 
 |		                |           |Entwickler	      | @EnderK58        |Feature9     |  
 |		                |           |Entwickler       |         |Feature10             |		
 |		                |	          |                 |         |                      |				
