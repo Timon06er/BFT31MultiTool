@@ -41,7 +41,7 @@ Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, z
 |**Administration**	|Release    |Administrator		| @AI-Assistant |Release, main   |
 |		                |	          |		              |      		|		                   |		
 |**Elektrotechnik**	|Menü ET/Spannungsfall|Teamkoordinator  |@Timsolo0408|ETEntwicklung,Feature1|
-|                   |           |Entwickler       |         |Feature2              |
+|                   |Leitungsquerschnittberechnen|Entwickler       |@Ilkan827|Feature2              |
 |                   |Widerstand/Spule|Entwickler       |@Dokihappy|Feature3              |
 |                   |Kondensator/Ohmsches/Gesetz​/Leistungsgesetz|Entwickler       |@Salaabbad|Feature4              |
 |                   |           |Entwickler       |         |Feature5              |
