@@ -1,19 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Figgle;
-using WIKlassenBibliothek;
-
-namespace MultiTool
+﻿using Figgle;
+namespace WIKlassenBibliothek;
+public class WIMenue
 {
-    internal class Hauptmenue
+    public static void WISubMenue()
     {
-        public static void HauptmenueAufruf()
-        {
-            bool Exit = false;
+ bool Exit = false;
 
             do
             {
@@ -24,7 +15,7 @@ namespace MultiTool
 
                 //ASCII art Logo wird erzeugt.
                 Console.WriteLine
-                    (FiggleFonts.Slant.Render("BFTMultiTool"));
+                    (FiggleFonts.Slant.Render("Wirtschaft"));
 
                 //Konsolentitel wird geändert.
                 Console.Title = "BFTMultiTool";
@@ -67,7 +58,7 @@ namespace MultiTool
 
                     case "m":
                         Console.Clear();
-                        //Hier das Mathematikmenü aufrufen
+                        //Hier das Mathematikmenü aufrufenc
                         break;
 
                     case "p":
@@ -77,10 +68,7 @@ namespace MultiTool
 
                     case "w":
                         Console.Clear();
-                        //Hier das Mathematikmenü aufrufen
-                        WIMenue.WISubMenue();
-
-
+                        //Hier das Wirtschaftsmenü aufrufen
                         break;
 
                     case "exit":
@@ -100,7 +88,5 @@ namespace MultiTool
 
             } while (!Exit);
 
-
-        }
     }
 }
