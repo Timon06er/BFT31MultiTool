@@ -36,39 +36,40 @@ public class WIMenue
 
                 //Eingabeaufforderung 
                 Console.WriteLine("Wählen Sie eine der folgenden Themenbereiche:\n");
-                Console.WriteLine("\te - Elektrotechnik");
-                Console.WriteLine("\ti - Informatik");
-                Console.WriteLine("\tm - Mathematik");
-                Console.WriteLine("\tp - Physik");
-                Console.WriteLine("\tw - Wirtschaft\n");
+                Console.WriteLine("\t1 - Elektrotechnik");
+                Console.WriteLine("\t2 - Informatik");
+                Console.WriteLine("\t3 - Mathematik");
+                Console.WriteLine("\t4 - Physik");
+                Console.WriteLine("\t5 - Feature20(Namen hier ändern) \n");
                 Console.Write("Eingabe:");
                 HauptAusw = Console.ReadLine().ToLower();
 
                 switch (HauptAusw)
                 {
-                    case "e":
+                    case "1":
                         Console.Clear();
                         //Hier das Etechnikmenü aufrufen
                         break;
 
-                    case "i":
+                    case "2":
                         Console.Clear();
                         //Hier das Informationstechnikmenü aufrufen
                         break;
 
-                    case "m":
+                    case "3":
                         Console.Clear();
                         //Hier das Mathematikmenü aufrufenc
                         break;
 
-                    case "p":
+                    case "4":
                         Console.Clear();
                         //Hier das Physikmenü aufrufen
                         break;
 
-                    case "w":
+                    case "5":
                         Console.Clear();
                         //Hier das Wirtschaftsmenü aufrufen
+                        //Aufruf Feature20
                         break;
 
                     case "exit":
