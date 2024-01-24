@@ -65,10 +65,10 @@ Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, z
 |		                |	          |Entwickler       |@Salemweeyo|Feature20           |	
 |		                |	          |	              	|		      |                   	 |					
 |**Mathematik**	    |Menü MT    |Teamkoordinator  | @can827       |MAEntwicklung,Feature21|				
-|		                |           |Entwickler       | @aliaaalmustafa      |Feature22             |		
-|		                |           |Entwickler       | @shabub1      |Feature23             |		
-|		                |           |Entwickler       | @yazilim12 	      |Feature24             |
-|		                |           |Entwickler	      | @musabhox     	|Feature25             |
+|		                |Linare Funktion           |Entwickler       | @aliaaalmustafa      |Feature22             |		
+|		                |Einfache Statistik           |Entwickler       | @shabub1      |Feature23             |		
+|		                |Casino           |Entwickler       | @yazilim12 	      |Feature24             |
+|		                |Rechner           |Entwickler	      | @musabhox     	|Feature25             |
 
 
 ---
