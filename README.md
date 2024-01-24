@@ -52,7 +52,7 @@ Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, z
 |		                |           |Entwickler	      | @EnderK58        |Feature9     |  
 |		                |           |Entwickler       |         |Feature10             |		
 |		                |	          |                 |         |                      |				
-|**Informatik**	    |Menü IT    |Teamkoordinator  |    @zhiqiangc67     |ITEntwicklung,Feature11|				
+|**Informatik**	    |Menü IT,File Converter(PNG->JPG/MP3->Wav)|Teamkoordinator  |    @zhiqiangc67     |ITEntwicklung,Feature11|				
 |		                |	   Password Checker       |Entwickler       |		@Timon06er      |Feature12             |		
 |		                |	          |Entwickler       |   @Speed-king      |Feature13             |	
 |		                |	          |Entwickler       |  @LucMey	      |Feature14             |			
