@@ -49,8 +49,8 @@ Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, z
 |**Physik**	        |Menü PY6 Volumen Von Würfeln, Kugeln, Pyramiden, und Prismen 	  |Teamkoordinator  | @anastasiiakhalaim |PHEntwicklung	,Feature|
 |		                | Gewicht auf anderen Planeten Berechnen           |Entwickler	      | @Alexknoppik       |Feature7 	 |	
 |		                |	  Infos zur aufbau und struktur der Materie         |Entwickler	      | @yagmurergin        |Feature8  | 
-|		                |           |Entwickler	      | @EnderK58        |Feature9     |  
-|		                |           |Entwickler       |         |Feature10             |		
+|		                | Physik multitool spiele gravitationsfragen unser sonnensytstem, physikalische winkel berechnung          |Entwickler	      | @EnderK58        |Feature9     |  
+|		                |           |Entwickler       | @Jason22669        |Feature10             |		
 |		                |	          |                 |         |                      |				
 |**Informatik**	    |Menü IT  ,Zahlengenerator  |Teamkoordinator  |    @zhiqiangc67     |ITEntwicklung,Feature11|				
 |		                |	   Password Checker       |Entwickler       |		@Timon06er      |Feature12             |		
