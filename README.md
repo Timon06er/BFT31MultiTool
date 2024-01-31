@@ -62,7 +62,7 @@ Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, z
 |		                |           |Entwickler       |@MuhammedTR38|Feature17         |		
 |		                |	          |Entwickler       |@brianbmc16|Feature18           |		
 |		                |Buy Luxury Item,Value increase|Entwickler       |@Mamedderficker|Feature19       |	
-|		            sell Luxury Item|Entwickler       |@Salemweeyo|Feature20           |	
+|		                 sell Luxury Item|   Entwickler       |@Salemweeyo|Feature20           |	
 |		                |	          |	              	|		      |                   	 |					
 |**Mathematik**	    |Menü MT    |Teamkoordinator  | @can827       |MAEntwicklung,Feature21|				
 |		                |Linare Funktion           |Entwickler       | @aliaaalmustafa      |Feature22             |		
