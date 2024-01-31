@@ -1,6 +1,6 @@
-namespace MAKlassenBibliothek;
+namespace ITKlassenBibliothek;
 
-internal class Feature1
+internal class Feature12
 {
     internal static void Feature_12()
     {
@@ -8,8 +8,3 @@ internal class Feature1
         //Diese Ausgabe hilft Ihnen zu erkennen ob der Aufruf funktioniert.
     }
 }
-case "12":
-   Console.Clear();
-   //Hier Feature1 aufrufen
-   Feature1.Feature_12();
-   break;

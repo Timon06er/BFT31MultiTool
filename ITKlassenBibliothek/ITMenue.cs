@@ -48,22 +48,26 @@ public class ITMenue
                 {
                     case "1":
                         Console.Clear();
-                        //Hier das Etechnikmenü aufrufen
+                        //Hier Feature11 aufrufen
+                        Feature11.Feature_11();
                         break;
 
                     case "2":
                         Console.Clear();
-                        //Hier das Informationstechnikmenü aufrufen
+                        //Hier Feature12 aufrufen
+                        Feature12.Feature_12();
                         break;
 
                     case "3":
                         Console.Clear();
-                        //Hier das Mathematikmenü aufrufen
+                        //Hier Feature13 aufrufen
+                        Feature13.Feature_13();
                         break;
 
                     case "4":
                         Console.Clear();
-                        //Hier das Physikmenü aufrufen
+                        //Hier Feature14 aufrufen
+                        Feature14.Feature_14();
                         break;
 
 
