@@ -55,7 +55,7 @@ Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, z
 |**Informatik**	    |Menü IT  ,Zahlengenerator  |Teamkoordinator  |    @zhiqiangc67     |ITEntwicklung,Feature11|				
 |		                |	   Password Checker       |Entwickler       |		@Timon06er      |Feature12             |		
 |		                |	          |Entwickler       |   @Speed-king      |Feature13             |	
-|		                |	          |Entwickler       |  @LucMey	      |Feature14             |			
+|		                |Random Username Generator	          |Entwickler       |  @LucMey	      |Feature14             |			
 |		                |	          |Entwickler       |         |Feature15             |			
 |		                |	          |	                |		      |		                   |				
 |**Wirtschaft**	    |Menü WI,Update stock price  |Teamkoordinator  |@Amannat01|WIEntwicklung,Feature16|				
