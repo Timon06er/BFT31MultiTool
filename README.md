@@ -59,9 +59,9 @@ Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, z
 |		                |	          |Entwickler       |         |Feature15             |			
 |		                |	          |	                |		      |		                   |				
 |**Wirtschaft**	    |Menü WI,Update stock price  |Teamkoordinator  |@Amannat01|WIEntwicklung,Feature16|				
-|		                |           |Entwickler       |@MuhammedTR38|Feature17         |		
-|		                |	          |Entwickler       |@brianbmc16|Feature18           |		
-|		                |Buy Luxury Item,Value increase|Entwickler       |@Mamedderficker|Feature19       |	
+|		                |Buy Luxury Item             |Entwickler       |@MuhammedTR38|Feature17         |		
+|		                |Print Luxuryitems/Status,Value increase     |Entwickler       |@brianbmc16|Feature18           |		
+|		                |Buy Stock/Sell Stock|Entwickler       |@Mamedderficker|Feature19       |	
 |		            sell Luxury Item|Entwickler       |@Salemweeyo|Feature20           |	
 |		                |	          |	              	|		      |                   	 |					
 |**Mathematik**	    |Menü MT    |Teamkoordinator  | @can827       |MAEntwicklung,Feature21|				
