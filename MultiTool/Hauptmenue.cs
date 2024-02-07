@@ -70,6 +70,7 @@ namespace MultiTool
 
                     case "p":
                         Console.Clear();
+                        PHKlassenBibliothek.PHMenue.PHSubMenue();
                         //Hier das Physikmenü aufrufen
                         break;
 
