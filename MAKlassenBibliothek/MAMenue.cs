@@ -40,10 +40,10 @@ public class MAMenue
             //Eingabeaufforderung 
             Console.WriteLine("Wählen Sie eine der folgenden Themenbereiche:\n");
             Console.WriteLine("\t1 - Flaechenrechner");
-            Console.WriteLine("\t2 - Rechner");
-            Console.WriteLine("\t3 - Mathematik");
-            Console.WriteLine("\t4 - Physik");
-            Console.WriteLine("\t5 - Wirtschaft\n");
+            Console.WriteLine("\t2 - Taschenrechner");
+            Console.WriteLine("\t3 - Casino App");
+            Console.WriteLine("\t4 - Lineare Funktion");
+            Console.WriteLine("\t5 - Einfache Statistik\n");
             Console.Write("Eingabe:");
             HauptAusw = Console.ReadLine().ToLower();
 
@@ -54,22 +54,23 @@ public class MAMenue
                     //Hier das Etechnikmenü aufrufen
                     break;
 
-                case "i":
+                case "2":
                     Console.Clear();
-                    //Hier das Informationstechnikmenü aufrufen
+                       //Hier Feature1 aufrufen
+                        Feature25.Feature_25();
                     break;
 
-                case "m":
+                case "3":
                     Console.Clear();
                     //Hier das Mathematikmenü aufrufen
                     break;
 
-                case "p":
+                case "4":
                     Console.Clear();
                     //Hier das Physikmenü aufrufen
                     break;
 
-                case "w":
+                case "5":
                     Console.Clear();
                     //Hier das Wirtschaftsmenü aufrufen
                     break;
