@@ -49,24 +49,19 @@ public class ETMenue
                     
                     break;
 
-                case "i":
+                case "2":
                     Console.Clear();
                     //Hier das Informationstechnikmenü aufrufen
                     break;
 
-                case "m":
+                case "3":
                     Console.Clear();
                     //Hier das Mathematikmenü aufrufen
                     break;
 
-                case "p":
+                case "4":
                     Console.Clear();
                     //Hier das Physikmenü aufrufen
-                    break;
-
-                case "w":
-                    Console.Clear();
-                    //Hier das Wirtschaftsmenü aufrufen
                     break;
 
                 case "subexit":
