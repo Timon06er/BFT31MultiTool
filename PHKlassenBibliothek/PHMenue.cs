@@ -1,6 +1,6 @@
 ﻿namespace PHKlassenBibliothek;
 using Figgle;
-using PHKlassenBibliothekKlassenBibliothek;
+using PHKlassenBibliothek;
 
 public class PHMenue
 {
