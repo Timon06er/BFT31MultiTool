@@ -58,6 +58,11 @@ public class PHMenue
 
                     case "4":
                         Console.Clear();
+                        Feature9.Feature_9();
+                        //Ender
+                        break;
+                    case "5":
+                        Console.Clear();
                         //Jason
                         break;
                     case "subexit":
