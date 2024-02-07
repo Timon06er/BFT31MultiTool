@@ -48,6 +48,7 @@ public class ETMenue
             {
                 case "1":
                     Console.Clear();
+                    Feature1.Feature_1();
                     //Hier das Etechnikmenü aufrufen
                     
                     break;
