@@ -10,6 +10,7 @@ internal class Feature7
             Console.Clear();
             double gewicht;
             double gewicht2;
+            string Planet;
             Console.WriteLine("Willkommen beim rechner vom gewicht auf anderen planeten");
             bool flag_conv = false; 
             do{
@@ -30,40 +31,45 @@ internal class Feature7
                 }
             }while(flag_conv == false);
 
-            Console.WriteLine("Bitte geben sie denn planeten an Mars,Jupiter,Venus,Merkur,Saturn,Uranus");
-            string Planet = Console.ReadLine();
+            Console.WriteLine("Bitte geben sie denn planeten an Mars,Jupiter,Venus,Merkur,Saturn,Uranus,Neptun");
+            Planet = Console.ReadLine();
 
             if (Planet == "Mars")
             {
                 gewicht2 = gewicht/9.81*3.71;
-                Console.WriteLine($"{"Ihr eingegebenes gewicht auf dem Mars beträgt"}{gewicht2,10:F3}");
+                Console.WriteLine($"{"Ihr eingegebenes gewicht auf dem Mars beträgt"}{gewicht2,10:F3} kg");
 
 
             }
             else if (Planet == "Jupiter")
             {
                 gewicht2 = gewicht/9.81*23.1;
-                Console.WriteLine($"{"Ihr eingegebenes gewicht auf dem Jupiter beträgt"}{gewicht2,10:F3}");
+                Console.WriteLine($"{"Ihr eingegebenes gewicht auf dem Jupiter beträgt"}{gewicht2,10:F3} kg");
             }
             else if (Planet == "Venus")
             {
                 gewicht2 = gewicht/9.81*8.87;
-                Console.WriteLine($"{"Ihr eingegebenes gewicht auf dem Venus beträgt"}{gewicht2,10:F3}");
+                Console.WriteLine($"{"Ihr eingegebenes gewicht auf dem Venus beträgt"}{gewicht2,10:F3} kg");
             }
             else if (Planet == "Merkur")
             {
                 gewicht2 = gewicht/9.81*3.7;
-                Console.WriteLine($"{"Ihr eingegebenes gewicht auf dem Merkur beträgt"}{gewicht2,10:F3}");
+                Console.WriteLine($"{"Ihr eingegebenes gewicht auf dem Merkur beträgt"}{gewicht2,10:F3} kg");
             }
             else if (Planet == "Saturn")
             {
                 gewicht2 = gewicht/9.81*9.3;
-                Console.WriteLine($"{"Ihr eingegebenes gewicht auf dem Saturn beträgt"}{gewicht2,10:F3}");
+                Console.WriteLine($"{"Ihr eingegebenes gewicht auf dem Saturn beträgt"}{gewicht2,10:F3} kg");
             }
             else if (Planet == "Uranus")
             {
                 gewicht2 = gewicht/9.81*8.69;
-                Console.WriteLine($"{"Ihr eingegebenes gewicht auf dem Uranus beträgt"}{gewicht2,10:F3}");
+                Console.WriteLine($"{"Ihr eingegebenes gewicht auf dem Uranus beträgt"}{gewicht2,10:F3} kg");
+            }
+            else if (Planet == "Neptun")
+            {
+                gewicht2 = gewicht/9.81*11.15;
+                Console.WriteLine($"{"Ihr eingegebenes gewicht auf dem Neptun beträgt"}{gewicht2,10:F3} kg");
             }
             else{
                 Console.WriteLine("Du hast eine Falsche Ausgabe gemacht");
