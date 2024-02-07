@@ -44,6 +44,7 @@ public class PHMenue
                     case "1":
                         Console.Clear();
                         //Anastasiia
+                        Feature6.Feature_6();
                         break;
 
                     case "2":
