@@ -24,12 +24,10 @@ public class ETMenue
                                 "                              >>> ET-Submenue <<<\n" +
                                 "------------------------------------------------------------------------------------\n\n");
 
-            Console.WriteLine("Eingabe: exit\t->\tbeendet das Programm");
+            Console.WriteLine("Eingabe: subexit\t->\tbeendet das Programm");
 
             //Beschreibung der Software.
-            Console.WriteLine("\n\nMit der Software 'BFTMulti-Tool' sollen wiederkehrende oder besonders aufwendige\n" +
-                                "Aufgabenaus dem schulischen Kontext erleichtert oder gelöst werden. Diese Aufgaben\n" +
-                                "ergeben sich aus den Problemstellungen aus dem Unterricht der Berufsfachschule für Technik.\n\n");
+            Console.WriteLine("\n\nWillkomen im Elektrotechnik Submenü\n");
 
             string HauptAusw;
 
@@ -37,10 +35,9 @@ public class ETMenue
             //Eingabeaufforderung 
             Console.WriteLine("Wählen Sie eine der folgenden Themenbereiche:\n");
             Console.WriteLine("\t1 - Spannungsfall");
-            Console.WriteLine("\ti - Informatik");
-            Console.WriteLine("\tm - Mathematik");
-            Console.WriteLine("\tp - Physik");
-            Console.WriteLine("\tw - Wirtschaft\n");
+            Console.WriteLine("\t2 - Leitungsquerschnittberechnen");
+            Console.WriteLine("\t3 - Widerstand/Spule");
+            Console.WriteLine("\t4 - Kondensator/Ohmsches/Gesetz​/Leistungsgesetz");
             Console.Write("Eingabe:");
             HauptAusw = Console.ReadLine().ToLower();
 
@@ -72,7 +69,7 @@ public class ETMenue
                     //Hier das Wirtschaftsmenü aufrufen
                     break;
 
-                case "exit":
+                case "subexit":
                     Exit = true;
                     break;
                 default:
