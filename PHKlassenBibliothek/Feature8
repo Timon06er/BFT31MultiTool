@@ -1,0 +1,10 @@
+namespace PHKlassenBibliothekKlassenBibliothek;
+
+internal class Feature8
+{
+    internal static void Feature_8()
+    {
+        Console.WriteLine("Test Feature 8"); 
+        
+    }
+}
