@@ -49,6 +49,7 @@ public class PHMenue
                     case "2":
                         Console.Clear();
                         //Alex
+                        Feature7.Feature_7();
                         break;
 
                     case "3":
