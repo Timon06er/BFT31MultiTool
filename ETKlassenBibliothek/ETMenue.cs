@@ -61,14 +61,10 @@ public class ETMenue
 
                 case "4":
                     Console.Clear();
-                    //Hier das Physikmenü aufrufen
+                    //Hier Feature4 aufrufen 
+                    Feature4.Feature_4();
                     break;
-
-                case "subexit":
-                    Exit = true;
-                    break;
-                default:
-
+              
                     Console.WriteLine("Ungültige Eingabe");
                     Console.ReadKey();
 
