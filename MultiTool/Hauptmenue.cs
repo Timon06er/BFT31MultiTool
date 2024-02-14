@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Figgle;
-using ETKlassenBibliothek;
+
+
 
 namespace MultiTool
 {
@@ -57,7 +58,8 @@ namespace MultiTool
                     case "e":
                         Console.Clear();
                         //Hier das Etechnikmenü aufrufen
-                        ETMenue.ETSubMenue();
+                        
+                        ETKlassenBibliothek.ETMenue.ETSubMenue();
                         break;
 
                     case "i":

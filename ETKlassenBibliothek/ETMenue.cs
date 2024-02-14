@@ -52,12 +52,7 @@ public class ETMenue
                 case "2":
                     Console.Clear();
                        //Hier Feature1 aufrufen
-                        Feature1.Feature_1();
-                    break;
-
-                case "2":
-                    Console.Clear();
-                    //Hier das Mathematikmenü aufrufen
+                        Feature2.Feature_2();
                     break;
 
                 case "3":
