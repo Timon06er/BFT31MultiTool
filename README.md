@@ -58,11 +58,11 @@ Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, z
 |		                |	          |Entwickler       |  @LucMey	      |Feature14             |			
 |		                |	          |Entwickler       |         |Feature15             |			
 |		                |	          |	                |		      |		                   |				
-|**Wirtschaft**	    |Menü WI,Update stock price  |Teamkoordinator  |@Amannat01|WIEntwicklung,Feature16|				
-|		                |           |Entwickler       |@MuhammedTR38|Feature17         |		
-|		                |	          |Entwickler       |@brianbmc16|Feature18           |		
-|		                |Buy Luxury Item,Value increase|Entwickler       |@Mamedderficker|Feature19       |	
-|		            sell Luxury Item|Entwickler       |@Salemweeyo|Feature20           |	
+|**Wirtschaft**	    |Menü WI,Nebenkostenrechner   |Teamkoordinator  |@Amannat01|WIEntwicklung,Feature16|				
+|		                |   Zinsrechner               |Entwickler       |@MuhammedTR38|Feature17         |		
+|		                |	     Kreditrechner          |Entwickler       |@brianbmc16|Feature18           |		
+|		                |Aktien Spiel                 |Entwickler       |@Mamedderficker|Feature19       |	
+|		            Bestellverwaltungssymstem         |Entwickler       |@Salemweeyo|Feature20           |	
 |		                |	          |	              	|		      |                   	 |					
 |**Mathematik**	    |Menü MT    |Teamkoordinator  | @can827       |MAEntwicklung,Feature21|				
 |		                |Linare Funktion           |Entwickler       | @aliaaalmustafa      |Feature22             |		
