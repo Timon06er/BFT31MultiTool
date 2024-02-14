@@ -46,11 +46,11 @@ Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, z
 |                   |Kondensator/Ohmsches/Gesetz​/Leistungsgesetz|Entwickler       |@Salaabbad|Feature4              |
 |                   |           |Entwickler       |         |Feature5              |
 |		                |	          |              		|		      |		                   |		
-|**Physik**	        |Menü PY6 Volumen Von Würfeln, Kugeln, Pyramiden, und Prismen 	  |Teamkoordinator  | @anastasiiakhalaim |PHEntwicklung	,Feature|
+|**Physik**	        |Menü PY6 Volumen Von Würfeln, Kugeln, Pyramiden, und Prismen 	  |Teamkoordinator  | @anastasiiakhalaim |PHEntwicklung	,Feature6 |
 |		                | Gewicht auf anderen Planeten Berechnen           |Entwickler	      | @Alexknoppik       |Feature7 	 |	
 |		                |	  Infos zur aufbau und struktur der Materie         |Entwickler	      | @yagmurergin        |Feature8  | 
-|		                |           |Entwickler	      | @EnderK58        |Feature9     |  
-|		                |           |Entwickler       |         |Feature10             |		
+|		                | Gravitation und Winkel berechnung          |Entwickler	      | @EnderK58        |Feature9     |  
+|		                |Vorsätze Für Maßeinheiten umwandeln SI-Einheiten umrechnen           |Entwickler       | @Jason22669         |Feature10             |		
 |		                |	          |                 |         |                      |				
 |**Informatik**	    |Menü IT  ,Zahlengenerator  |Teamkoordinator  |    @zhiqiangc67     |ITEntwicklung,Feature11|				
 |		                |	   Password Checker       |Entwickler       |		@Timon06er      |Feature12             |		
