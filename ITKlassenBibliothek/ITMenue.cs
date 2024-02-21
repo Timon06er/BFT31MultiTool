@@ -1,5 +1,4 @@
 ﻿using Figgle;
-using subexit;
 namespace ITKlassenBibliothek;
 public class ITMenue
 {
@@ -40,7 +39,7 @@ public class ITMenue
                 Console.WriteLine("\t1 - Password Checker");
                 Console.WriteLine("\t2 - Random Wheel Number Generator");
                 Console.WriteLine("\t3 - Mathematik");
-                Console.WriteLine("\t4 - Physik");
+                Console.WriteLine("\t4 - Username Generator");
                 Console.Write("Eingabe:");
                 HauptAusw = Console.ReadLine().ToLower();
 
