@@ -33,7 +33,8 @@ public class PHMenue
                                   "1. Berechnung des Volumens von Polyedern\n" +
                                   "2. Gewicht auf anderen Planeten berechnen\n" +
                                   "3. Infos zur Aufbau und Struktur der Materie\n" +
-                                  "4. Vorsätze für Maßeinheiten umwandeln SI-Einheiten umrechen\n\n");
+                                  "4. Gravitation und Winkel berechnung\n" +
+                                  "5. Vorsätze für Maßeinheiten umwandeln SI-Einheiten umrechen\n\n");
 
                 string HauptAusw;
                 Console.Write("Eingabe:");
