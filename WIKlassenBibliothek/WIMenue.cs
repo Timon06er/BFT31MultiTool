@@ -21,15 +21,15 @@ public class WIMenue
                 Console.Title = "BFTMultiTool";
 
                 Console.WriteLine("------------------------------------------------------------------------------------\n" +
-                                  "                              >>> Hauptmenü <<<\n" +
+                                  "                              >>> WI-Hauptmenü <<<\n" +
                                   "------------------------------------------------------------------------------------\n\n");
 
                 Console.WriteLine("Eingabe: exit\t->\tbeendet das Programm");
 
                 //Beschreibung der Software.
-                Console.WriteLine("\n\nMit der Software 'BFTMulti-Tool' sollen wiederkehrende oder besonders aufwendige\n" +
-                                  "Aufgabenaus dem schulischen Kontext erleichtert oder gelöst werden. Diese Aufgaben\n" +
-                                  "ergeben sich aus den Problemstellungen aus dem Unterricht der Berufsfachschule für Technik.\n\n");
+                Console.WriteLine("\n\nMit der Software 'BFTMulti-Tool'finden Sie die berreiche Kreditrechner,Nebenkostenrechner,ein Aktien Spiel,Bestellverwaltungssystem und einen Zinsrechner.\n" +
+                                  "Diese vereinfachen ihr privates Leben und mit dem Aktien Spiel können Sie einen Einblick rein werfen wie man in Aktien investiert. Diese Aufgaben\n" +
+                                  "stehen Ihnen kostenlos zur Verfügung.\n\n");
 
                 string HauptAusw;
 
