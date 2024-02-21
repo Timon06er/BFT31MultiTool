@@ -1,61 +1,50 @@
 
+using System.Diagnostics.Tracing;
 using System.Globalization;
+using System.Net;
+using System.Net.WebSockets;
+using System.Reflection.Metadata;
 
 namespace PHKlassenBibliothek;
 
 internal class Feature8
-{
+{       
     internal static void Feature_8()
-        
+
 	{
 		bool weiter = true;
 		
 		
 			
-            do{
+        do{
 			Console.WriteLine($"Willkommen bei Physik für Anfänger!");
 			Console.ReadLine();
 
 			Console.WriteLine("\n\nIm Bereich Physik bieten wir weitere Funktionen: \n" +
 					"1. Atom und Kernenergie\n" +
-					"2. Astronomie" +
-					"3. Radioaktivität" +
-					"4. Quantenphysik" +
-					"5. Atom- & Molekülphysik" +
-					"6. Kern- & Teilchenphysik" +
-					"7. Festkörperphysik" +
-					"8. Röntgenphysik" +
-					"9. Nanotechnologie" +
-					"10. Elektrischer Strom" +
-					"11. Elektrodynamik" +
-					"12. Kernphysik" +
-					"13. Temparatur" +
-					"13. Kreisbewegungen" +
-					"14. Dichte" +
-					"15. Thermodynamik" +
-					"16. Mechanik ");
+					"2. Astronomie\n" +
+					"3. Radioaktivität\n" +
+					"4. Quantenphysik\n" +
+					"5. Atom- & Molekülphysik\n" +
+					"6. Kern- & Teilchenphysik\n" +
+					"7. Festkörperphysik\n" +
+					"8. Röntgenphysik\n" +
+					"9. Nanotechnologie\n" +
+					"10. Elektrischer Strom\n" +
+					"11. Elektrodynamik\n" +
+					"12. Kernphysik\n" +
+					"13. Temparatur\n" +
+					"13. Kreisbewegungen\n" +
+					"14. Dichte\n" +
+					"15. Thermodynamik\n" +
+					"16. Mechanik\n");
 
 
-			// Benutzerabfrage und Ausgabe der Ausführung
+			
 			Console.WriteLine($"Geben Sie ihr gewünschtes Thema ein:");
 			string Physik_Lexikon = Console.ReadLine();
 
-			// if ("Physik Lexikon" == eingabe)
-			// {
-			// 	string definition =  (eingabe);
-			// 	Console.WriteLine($"{eingabe}: {definition}");
-			// }
-			// else
-			// {
-			// 	Console.WriteLine("Das Thema wurde nicht gefunden");
-			// }
-
-			// Abfrage, ob das Programm neu gestartet werden soll
-			// Console.WriteLine("Möchten Sie das Programm erneut starten? (ja/nein):");
-			// string antwort = Console.ReadLine().ToLower();
-			// if (antwort != "ja")
-
-			// while (weiter)
+		
 			
 			
 			if(Physik_Lexikon == "Atom und Kernenergie")
@@ -159,18 +148,20 @@ internal class Feature8
 			{
 				Console.WriteLine($"Mechanik ausführug:");
 				Console.WriteLine($"Definition: Mechanik beschäftigt sich mit den Gesetzen der Bewegung und Kräfte, die auf Körper wirken.");
-				Console.WriteLine($"Aufbau: Klassische Mechanik behandelt makroskopische Objekte und ba t auf den Gesetzen von Newton. Quantenmechanik ist die Mechanik auf subatomar Ebene und beschreibt das Verhalten von Elementarteilchen.");   
-			
-			else{
-				Console.WriteLine($"Fehler:");
+				Console.WriteLine($"Aufbau: Klassische Mechanik behandelt makroskopische Objekte und ba t auf den Gesetzen von Newton. Quantenmechanik ist die Mechanik auf subatomar Ebene und beschreibt das Verhalten von Elementarteilchen.");  
+			}
+			else
+			{
+				Console.WriteLine($"Fehler");
 			}
 			Console.ReadLine();
 		
 		} while (true);	
-	}
-}      
+	} 
+}     
 
-             
+        
+              
             
 		   
             
