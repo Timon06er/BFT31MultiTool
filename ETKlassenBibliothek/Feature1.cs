@@ -3,9 +3,12 @@ namespace ETKlassenBibliothek;
 internal class Feature1
 {
     internal static void Feature_1()
+
     {
-        Console.WriteLine("Test Feature 1"); 
-        //Diese Ausgabe hilft Ihnen zu erkennen ob der Aufruf funktioniert.
-        Console.ReadLine();
+        bool NichtFertig;
+        NichtFertig = true;
+        do
+        Console.WriteLine("Willkommen im programm zur berechnung eines Spannungsfall.");
+        while(NichtFertig == true);
     }
 }

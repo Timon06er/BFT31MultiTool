@@ -37,10 +37,10 @@ public class ETMenue
             //Eingabeaufforderung 
             Console.WriteLine("Wählen Sie eine der folgenden Themenbereiche:\n");
             Console.WriteLine("\t1 - Spannungsfall");
-            Console.WriteLine("\ti - Informatik");
-            Console.WriteLine("\tm - Mathematik");
-            Console.WriteLine("\tp - Physik");
-            Console.WriteLine("\tw - Wirtschaft\n");
+            Console.WriteLine("\t2 - Informatik");
+            Console.WriteLine("\t3 - Mathematik");
+            Console.WriteLine("\t4 - Physik");
+            Console.WriteLine("\t5 - Wirtschaft\n");
             Console.Write("Eingabe:");
             HauptAusw = Console.ReadLine().ToLower();
 
@@ -53,22 +53,22 @@ public class ETMenue
                     
                     break;
 
-                case "i":
+                case "2":
                     Console.Clear();
                     //Hier das Informationstechnikmenü aufrufen
                     break;
 
-                case "m":
+                case "3":
                     Console.Clear();
                     //Hier das Mathematikmenü aufrufen
                     break;
 
-                case "p":
+                case "4":
                     Console.Clear();
                     //Hier das Physikmenü aufrufen
                     break;
 
-                case "w":
+                case "5":
                     Console.Clear();
                     //Hier das Wirtschaftsmenü aufrufen
                     break;
