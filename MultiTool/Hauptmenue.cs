@@ -30,26 +30,26 @@ namespace MultiTool
                 Console.Title = "BFTMultiTool";
 
                 Console.WriteLine("------------------------------------------------------------------------------------\n" +
-                                  "                              >>> Hauptmenü <<<\n" +
+                                  "                              >>> WI-Hauptmenü <<<\n" +
                                   "------------------------------------------------------------------------------------\n\n");
 
                 Console.WriteLine("Eingabe: exit\t->\tbeendet das Programm");
 
                 //Beschreibung der Software.
-                Console.WriteLine("\n\nMit der Software 'BFTMulti-Tool' sollen wiederkehrende oder besonders aufwendige\n" +
-                                  "Aufgabenaus dem schulischen Kontext erleichtert oder gelöst werden. Diese Aufgaben\n" +
-                                  "ergeben sich aus den Problemstellungen aus dem Unterricht der Berufsfachschule für Technik.\n\n");
+                Console.WriteLine("\n\nMit der Software 'BFTMulti-Tool'finden Sie die berreiche Kreditrechner,Nebenkostenrechner,ein Aktien Spiel,Bestellverwaltungssystem und einen Zinsrechner.\n" +
+                                  "Diese vereinfachen ihr privates Leben und mit dem Aktien Spiel können Sie einen Einblick rein werfen wie man in Aktien investiert. Diese Programme\n" +
+                                  "stehen Ihnen kostenlos zur Verfügung.\n");
 
                 string HauptAusw;
 
 
                 //Eingabeaufforderung 
                 Console.WriteLine("Wählen Sie eine der folgenden Themenbereiche:\n");
-                Console.WriteLine("\te - Elektrotechnik");
-                Console.WriteLine("\ti - Informatik");
-                Console.WriteLine("\tm - Mathematik");
-                Console.WriteLine("\tp - Physik");
-                Console.WriteLine("\tw - Wirtschaft\n");
+                Console.WriteLine("\te - Nebenkostenrechner");
+                Console.WriteLine("\ti - Zinsrechner");
+                Console.WriteLine("\tm - Kreditrechner");
+                Console.WriteLine("\tp - Aktien Spiel");
+                Console.WriteLine("\tw - Bestellverwaltungssystem\n");
                 Console.Write("Eingabe:");
                 HauptAusw = Console.ReadLine().ToLower();
 
