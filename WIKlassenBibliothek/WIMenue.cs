@@ -36,11 +36,11 @@ public class WIMenue
 
                 //Eingabeaufforderung 
                 Console.WriteLine("Wählen Sie eine der folgenden Themenbereiche:\n");
-                Console.WriteLine("\t1 - Elektrotechnik");
-                Console.WriteLine("\t2 - Informatik");
-                Console.WriteLine("\t3 - Mathematik");
-                Console.WriteLine("\t4 - Physik");
-                Console.WriteLine("\t5 - Feature20(Namen hier ändern) \n");
+                Console.WriteLine("\t1 - Nebenkostenrechner");
+                Console.WriteLine("\t2 - Zinsrechner");
+                Console.WriteLine("\t3 - Kreditrechner");
+                Console.WriteLine("\t4 - Aktienspiel");
+                Console.WriteLine("\t5 - Bestellverwaltungssystem \n");
                 Console.Write("Eingabe:");
                 HauptAusw = Console.ReadLine().ToLower();
 
