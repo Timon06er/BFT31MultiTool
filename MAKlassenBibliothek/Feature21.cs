@@ -11,7 +11,7 @@ namespace MAKlassenBibliothek
                 Console.Clear();
                 Console.WriteLine("╔════════════════════════════════════╗");
                 Console.WriteLine("║   Willkommen beim Flächenrechner   ║");
-                Console.WriteLine("║       von canos company            ║");
+                Console.WriteLine("║          von canos.company         ║");
                 Console.WriteLine("╚════════════════════════════════════╝");
                 Console.WriteLine(" ");
 
@@ -71,7 +71,12 @@ namespace MAKlassenBibliothek
         {
             Console.WriteLine("");
             Console.WriteLine("");
-            Console.WriteLine("Um eine andere option zu wählen können sie jederzeit exit schreiben");
+            Console.WriteLine("╔═══════════════════════╗");
+            Console.WriteLine("║   Rechteck berechnen  ║");
+            Console.WriteLine("╚═══════════════════════╝");
+            Console.WriteLine("------------------------------------------------------------------");
+            Console.WriteLine("Um eine andere option zu wählen können sie jederzeit exit eingeben");
+            Console.WriteLine("------------------------------------------------------------------");
             Console.WriteLine("╔════════════════════════╗");
             Console.WriteLine("║  Formel für Rechteck:  ║");
             Console.WriteLine("║  Länge * Breite        ║");
@@ -127,7 +132,12 @@ namespace MAKlassenBibliothek
         {
             Console.WriteLine("");
             Console.WriteLine("");
-            Console.WriteLine("Um eine andere option zu wählen können sie jederzeit exit schreiben");
+            Console.WriteLine("╔═══════════════════════╗");
+            Console.WriteLine("║   Quadrat berechnen   ║");
+            Console.WriteLine("╚═══════════════════════╝");
+            Console.WriteLine("------------------------------------------------------------------");
+            Console.WriteLine("Um eine andere option zu wählen können sie jederzeit exit eingeben");
+            Console.WriteLine("------------------------------------------------------------------");
             Console.WriteLine("╔═══════════════════════╗");
             Console.WriteLine("║  Formel für Quadrat:  ║");
             Console.WriteLine("║  Seite * Seite        ║");
@@ -171,7 +181,12 @@ namespace MAKlassenBibliothek
         {
             Console.WriteLine("");
             Console.WriteLine("");
-            Console.WriteLine("Um eine andere option zu wählen können sie jederzeit exit schreiben");
+            Console.WriteLine("╔════════════════════════╗");
+            Console.WriteLine("║     Kreis berechnen    ║");
+            Console.WriteLine("╚════════════════════════╝");
+            Console.WriteLine("------------------------------------------------------------------");
+            Console.WriteLine("Um eine andere option zu wählen können sie jederzeit exit eingeben");
+            Console.WriteLine("------------------------------------------------------------------");
             Console.WriteLine("╔════════════════════════╗");
             Console.WriteLine("║   Formel für Kreis:    ║");
             Console.WriteLine("║  Pi * Radius * Radius  ║");
@@ -215,7 +230,12 @@ namespace MAKlassenBibliothek
         {
             Console.WriteLine("");
             Console.WriteLine("");
-            Console.WriteLine("Um eine andere option zu wählen können sie jederzeit exit schreiben");
+            Console.WriteLine("╔═══════════════════════╗");
+            Console.WriteLine("║   Dreieck berechnen   ║");
+            Console.WriteLine("╚═══════════════════════╝");
+            Console.WriteLine("------------------------------------------------------------------");
+            Console.WriteLine("Um eine andere option zu wählen können sie jederzeit exit eingeben");
+            Console.WriteLine("------------------------------------------------------------------");
             Console.WriteLine("╔═══════════════════════╗");
             Console.WriteLine("║  Formel für Dreieck:  ║");
             Console.WriteLine("║  0.5 * Basis * Höhe   ║");
@@ -270,7 +290,12 @@ namespace MAKlassenBibliothek
         {
             Console.WriteLine("");
             Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine("╔═════════════════════════════════════════════╗");
+            Console.WriteLine("║               Trapez berechnen              ║");
+            Console.WriteLine("╚═════════════════════════════════════════════╝");
+            Console.WriteLine("------------------------------------------------------------------");
+            Console.WriteLine("Um eine andere option zu wählen können sie jederzeit exit eingeben");
+            Console.WriteLine("------------------------------------------------------------------");
             Console.WriteLine("╔═════════════════════════════════════════════╗");
             Console.WriteLine("║              Formel für Trapez:             ║");
             Console.WriteLine("║  0.5 * (obere Seite + untere Seite) * Höhe  ║");
