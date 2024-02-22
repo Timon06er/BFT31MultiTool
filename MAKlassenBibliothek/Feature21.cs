@@ -1,24 +1,20 @@
-namespace MAKlassenBibliothek;
+using System;
 
-internal class Feature21
+namespace MAKlassenBibliothek
 {
-    internal static void Feature_21()
+    internal class Feature21
     {
-        using System;
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        while (true)
+        internal static void Feature_21()
         {
-            Console.Clear();
-            Console.WriteLine("************************************");
-            Console.WriteLine("*                                  *");
-            Console.WriteLine("*   Willkommen beim               *");
-            Console.WriteLine("*   Flächenrechner von Can        *");
-            Console.WriteLine("*                                  *");
-            Console.WriteLine("************************************");
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine("************************************");
+                Console.WriteLine("*                                  *");
+                Console.WriteLine("*   Willkommen beim               *");
+                Console.WriteLine("*   Flächenrechner von Can        *");
+                Console.WriteLine("*                                  *");
+                Console.WriteLine("************************************");
 
             Console.WriteLine("1. Rechteck");
             Console.WriteLine("2. Quadrat");
@@ -72,7 +68,7 @@ class Program
         {
             Console.WriteLine("");
             Console.WriteLine("");
-            Console.WriteLine("Um ins Menü zu kommen exit schreiben");
+            Console.WriteLine("Um eine andere option zu wählen können sie jederzeit exit schreiben");
             Console.WriteLine("------------------------------------");
             Console.WriteLine("Formel für Rechteck:");
             Console.WriteLine("Länge * Breite");
@@ -126,7 +122,7 @@ class Program
         {
             Console.WriteLine("");
             Console.WriteLine("");
-            Console.WriteLine("Um ins Menü zu kommen exit schreiben");
+            Console.WriteLine("Um eine andere option zu wählen können sie jederzeit exit schreiben");
             Console.WriteLine("------------------------------------");
             Console.WriteLine("Formel für Quadrat:");
             Console.WriteLine("Seite * Seite");
@@ -169,7 +165,7 @@ class Program
         {
             Console.WriteLine("");
             Console.WriteLine("");
-            Console.WriteLine("Um ins Menü zu kommen exit schreiben");
+            Console.WriteLine("Um eine andere option zu wählen können sie jederzeit exit schreiben");
             Console.WriteLine("------------------------------------");
             Console.WriteLine("Formel für Kreis:");
             Console.WriteLine("Pi * Radius * Radius");
@@ -212,7 +208,7 @@ class Program
         {
             Console.WriteLine("");
             Console.WriteLine("");
-            Console.WriteLine("Um ins Menü zu kommen exit schreiben");
+            Console.WriteLine("Um eine andere option zu wählen können sie jederzeit exit schreiben");
             Console.WriteLine("------------------------------------");
             Console.WriteLine("Formel für Dreieck:");
             Console.WriteLine("0.5 * Basis * Höhe");
@@ -265,7 +261,7 @@ class Program
         {
             Console.WriteLine("");
             Console.WriteLine("");
-            Console.WriteLine("Um ins Menü zu kommen exit schreiben");
+            Console.WriteLine("Um eine andere option zu wählen können sie jederzeit exit schreiben");
             Console.WriteLine("------------------------------------");
             Console.WriteLine("Formel für Trapez:");
             Console.WriteLine("0.5 * (obere Seite + untere Seite) * Höhe");
@@ -342,4 +338,3 @@ class Program
 }
 
     }
-}
