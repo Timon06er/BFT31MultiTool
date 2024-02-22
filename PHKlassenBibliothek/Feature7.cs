@@ -56,34 +56,37 @@ internal class Feature7
             
             if(eingabe_auswahl=="1")
             {
-                //Neuer Listeneintrag
-                //   Console.WriteLine("Geben Sie den Namen des neuen Planeten ein:");
-                //     string name_neu = Console.ReadLine();
-                //     if(name_neu == "exit")
-                //     {
-                //         Console.Clear();
-                //         return;
-                //     }
+                    //Neuer Listeneintrag
+                    Console.WriteLine("Geben Sie den Namen des neuen Planeten ein:");
+                string name_neu = Console.ReadLine();
+                if (name_neu == "exit")
+                {
+                    Console.Clear();
+                    return;
+                }
 
-                //     Console.WriteLine("Geben Sie die Gravitationskraft des neuen Planeten ein:");
-                //     double gravitation_neu;
-                //     if(gravitation_neu == "exit")
-                //     {
-                //         Console.Clear();
-                //         return;
-                //     }
-                //     while (!double.TryParse(Console.ReadLine(), out gravitation_neu))
-                //     {
-                //         Console.WriteLine("Ungültige Eingabe für die Gravitationskraft. Bitte geben Sie eine Zahl ein:");
-                //     }
+                Console.WriteLine("Geben Sie die Gravitationskraft des neuen Planeten ein:");
+                string gravitationseingabe = Console.ReadLine();
+                double gravitation_neu;
 
-                //     Planet neu_planet = new Planet
-                //     {
-                //         Name = name_neu,
-                //         Gravitation = gravitation_neu
-                //     };
-                //     planeten.Add(neu_planet);
+                if (gravitationseingabe == "exit")
+                {
+                    Console.Clear();
+                    return;
+                }
 
+                while (!double.TryParse(gravitationseingabe, out gravitation_neu))
+                {
+                    Console.WriteLine("Ungültige Eingabe für die Gravitationskraft. Bitte geben Sie eine Zahl ein:");
+                    gravitationseingabe = Console.ReadLine();
+                }
+
+                Planet neu_planet = new Planet
+                {
+                    Name = name_neu,
+                    Gravitation = gravitation_neu
+                };
+                planeten.Add(neu_planet);
             }
             else if(eingabe_auswahl=="2")
             {
@@ -95,12 +98,14 @@ internal class Feature7
                 Planet = Console.ReadLine();
 
                 flag_conv = int.TryParse(Planet, out int planet_int);
+                Planet planet_ausw = planeten.ElementAt(planet_int-1);
 
-                if(flag_conv ==true && planet_int<9 && planet_int>0 )
+                if (flag_conv == true && planet_int >= 1 && planet_int <= planeten.Count)
                 {
-                    Planet planet_ausw = planeten.ElementAt(planet_int-1);
+                   
                     Console.WriteLine(planet_ausw.Gravitation);
                     Console.ReadLine();
+                   
                 }
                 else if(Planet == "exit")
                 {
@@ -131,15 +136,20 @@ internal class Feature7
                     }
 
                     flag_conv = double.TryParse(gewicht_str,out gewicht);
-
+                    
                     if(flag_conv == false)
                     {
                         Console.WriteLine("Sie haben eine falsche eingabe gemacht...");
                         Console.ReadLine();
                         (int, int) cPosAM = Console.GetCursorPosition();    
                         KonsolenExtrasBibliothek.ConsoleExtras.ClearCurrentConsoleLine(cPosBM.Item2, cPosAM.Item2);
+                        
                     }
-                }while(flag_conv == false);
+                    
+                     }while(flag_conv == false);
+                     gewicht2 = gewicht/9.81*planet_ausw.Gravitation;
+                Console.WriteLine($"Das Gewicht auf {planet_ausw.Name} beträgt: {gewicht2:F4} kg");
+                Console.ReadLine();
 
 
 
@@ -156,6 +166,7 @@ internal class Feature7
                  Console.WriteLine("Ungültige Auswahl. Bitte wählen Sie 1, 2 oder exit.");
                     Console.ReadLine();
             }
+   
 
 
 
