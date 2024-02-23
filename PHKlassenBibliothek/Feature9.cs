@@ -84,10 +84,15 @@ internal class Feature9
 
             while (!gültigeEingabe)
             {
-                Console.Write("Ihre Antwort: ");
+                Console.Write("Ihre Antwort (geben Sie 'exit' ein, um die Anwendung zu beenden): ");
                 string eingabeString = Console.ReadLine();
 
-                //Dies Checkt ob die Eingabe eine zahl ist
+                if (eingabeString.ToLower() == "exit")
+                {
+                    Environment.Exit(0); // Beendet die Anwendung
+                }
+
+                // Überprüfen, ob die Eingabe eine Zahl ist
                 if (double.TryParse(eingabeString, out eingabe))
                 {
                     gültigeEingabe = true;
@@ -96,13 +101,15 @@ internal class Feature9
                 else
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Die Eingabe ist ungültig. Bitte geben Sie eine Zahl ein.");
-                    
+                    Console.WriteLine("Die Eingabe ist ungültig. Bitte geben Sie eine Zahl ein oder 'exit' zum Beenden.");
+                    Console.ResetColor();
                 }
             }
 
             Console.WriteLine();
         }
+
+
 
         //In dieser For Schleife werden die Antworten mit den Ergebnissen verglichen und auf die Richtigkeit geprüft
 
@@ -152,16 +159,29 @@ internal class Feature9
         Console.WriteLine($"Der Winkel C beträgt: {Math.Round(angleC, 2)} Grad");
     }
 
-    static double GetUserInput(string sideName)
+     static double GetUserInput(string sideName)
     {
         double side;
-        //Gibt einen Text was machen machen muss
-        Console.WriteLine($"Gib den Wert für {sideName} ein: ");
+        Console.WriteLine($"Gib den Wert für {sideName} ein (exit zum Beenden): ");
 
-        //Checkt ob die eingabe ein Double ist wenn nicht wird eine Zeile geschrieben das man kein Buchstabe eingeben kann und man muss die Zahl neu eingeben
-        while (!double.TryParse(Console.ReadLine(), out side))
+        // Benutzereingabe verarbeiten
+        string input = Console.ReadLine();
+
+        if (input.ToLower() == "exit")
         {
-            Console.WriteLine($"Ungültige Eingabe. Bitte gib eine numerische Wert für {sideName} ein: ");
+            Environment.Exit(0);
+        }
+
+        // Versuchen, die Eingabe in eine Zahl zu konvertieren
+        while (!double.TryParse(input, out side))
+        {
+            Console.WriteLine($"Ungültige Eingabe. Bitte gib eine numerische Wert für {sideName} ein (exit zum Beenden): ");
+            input = Console.ReadLine();
+
+            if (input.ToLower() == "exit")
+            {
+                Environment.Exit(0); 
+            }
         }
 
         return side;
