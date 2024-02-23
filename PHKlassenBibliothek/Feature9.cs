@@ -89,7 +89,7 @@ internal class Feature9
 
                 if (eingabeString.ToLower() == "exit")
                 {
-                    Environment.Exit(0); // Beendet die Anwendung
+                    Environment.Exit(0);
                 }
 
                 // Überprüfen, ob die Eingabe eine Zahl ist
