@@ -39,7 +39,7 @@ public class WIMenue
                 Console.WriteLine("\t1 - Elektrotechnik");
                 Console.WriteLine("\t2 - Informatik");
                 Console.WriteLine("\t3 - Mathematik");
-                Console.WriteLine("\t4 - Physik");
+                Console.WriteLine("\t4 - Buy/Sell");
                 Console.WriteLine("\t5 - Feature20(Namen hier ändern) \n");
                 Console.Write("Eingabe:");
                 HauptAusw = Console.ReadLine().ToLower();
@@ -64,6 +64,9 @@ public class WIMenue
                     case "4":
                         Console.Clear();
                         //Hier das Physikmenü aufrufen
+                        Feature19.Feature_19();
+
+
                         break;
 
                     case "5":
@@ -85,6 +88,10 @@ public class WIMenue
                         KonsolenExtrasBibliothek.ConsoleExtras.ClearCurrentConsoleLine(cPosBM.Item2, cPosAM.Item2);
 
                         break;
+
+
+
+                        
                 }
 
             } while (!Exit);
