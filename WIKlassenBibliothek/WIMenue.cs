@@ -40,7 +40,7 @@ public class WIMenue
                 Console.WriteLine("\t2 - Informatik");
                 Console.WriteLine("\t3 - Mathematik");
                 Console.WriteLine("\t4 - Physik");
-                Console.WriteLine("\t5 - Feature20(Namen hier ändern) \n");
+                Console.WriteLine("\t5 - Bestellverwaltung \n");
                 Console.Write("Eingabe:");
                 HauptAusw = Console.ReadLine().ToLower();
 
@@ -67,10 +67,10 @@ public class WIMenue
                         break;
 
                     case "5":
-                        Console.Clear();
-                        //Hier das Wirtschaftsmenü aufrufen
-                        //Aufruf Feature20
-                        break;
+                    Console.Clear();
+                    //Hier Feature20 aufrufen
+                    Feature20.Feature_20();
+                    break;
 
                     case "exit":
                         Exit = true;
