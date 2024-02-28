@@ -32,7 +32,7 @@ namespace ITKlassenBibliothek
             bool repeat = true;
             while (repeat)
             {
-                Console.WriteLine("Bitte wählen Sie die Länge der generierten Zahl:");
+                Console.WriteLine("Bitte wählen Sie die Länge der generierten Zahl(Maximal 9 stellig):");
                 Console.WriteLine("1. 1-10");
                 Console.WriteLine("2. 1-100");
                 Console.WriteLine("3. 1-200");
@@ -90,7 +90,7 @@ namespace ITKlassenBibliothek
             int input;
             while (!int.TryParse(Console.ReadLine(), out input))
             {
-                Console.WriteLine("Ungültige Eingabe. Bitte geben Sie eine ganze Zahl ein:");
+                Console.WriteLine("Ungültige Eingabe. Bitte geben Sie eine kleinere Zahl ein:");
             }
             return input;
         }
