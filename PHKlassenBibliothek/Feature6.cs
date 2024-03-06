@@ -13,11 +13,12 @@ internal class Feature6
 
             do
             {
+                Console.Clear();
                 Console.WriteLine();
                 Console.WriteLine("Willkommen beim Rechner von Volumen von geometrischen Körpern!");
                 Console.WriteLine();
                 Console.WriteLine("Eingabe: exit\t->\tbeendet das Programm");
-
+                Console.WriteLine();
                 Console.WriteLine("Bitte wählen Sie ein geometrischen Körper:");
                 Console.WriteLine("1. Würfel");
                 Console.WriteLine("2. Quader");
@@ -71,6 +72,7 @@ internal class Feature6
         {
             double volumen = Math.Pow(seitenlaenge, 3);
             Console.WriteLine($"Das Volumen des Würfels beträgt: {volumen:F4}");
+            Console.ReadLine();
         }
         else if(eingabe=="exit")
         {
@@ -99,6 +101,7 @@ internal class Feature6
                 {
                     double volumen = laenge * breite * hoehe;
                     Console.WriteLine($"Das Volumen des Quaders beträgt: {volumen:F4}");
+                    Console.ReadLine();
                 }
                 else if (eingabe3=="exit")
                 {
@@ -141,6 +144,7 @@ internal class Feature6
             {
                 double volumen = Math.PI * Math.Pow(radius, 2) * (hoehe / 3);
                 Console.WriteLine($"Das Volumen des Kegels beträgt: {volumen:F4}");
+                Console.ReadLine();
             }
             else if (eingabe5=="exit")
             {
@@ -170,6 +174,7 @@ internal class Feature6
         {
             double volumen = (4.0 / 3) * Math.PI * Math.Pow(radius, 3);
             Console.WriteLine($"Das Volumen der Kugel beträgt: {volumen:F4}");
+            Console.ReadLine();
         }
         else if (eingabe6=="exit")
         {
@@ -194,6 +199,7 @@ internal class Feature6
             {
                 double volumen = Math.PI * Math.Pow(radius, 2) * hoehe;
                 Console.WriteLine($"Das Volumen des Zylinders beträgt: {volumen:F4}");
+                Console.ReadLine();
             }
             else if (eingabe8=="exit")
             {
