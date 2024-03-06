@@ -45,11 +45,11 @@ namespace MultiTool
 
                 //Eingabeaufforderung 
                 Console.WriteLine("Wählen Sie eine der folgenden Themenbereiche:\n");
-                Console.WriteLine("\te - Nebenkostenrechner");
-                Console.WriteLine("\ti - Zinsrechner");
-                Console.WriteLine("\tm - Kreditrechner");
-                Console.WriteLine("\tp - Aktien Spiel");
-                Console.WriteLine("\tw - Bestellverwaltungssystem\n");
+                Console.WriteLine("\te - Elektrotechnick");
+                Console.WriteLine("\ti - Informatik");
+                Console.WriteLine("\tm - Mathematik");
+                Console.WriteLine("\tp - Physik");
+                Console.WriteLine("\tw - Wirtschaft\n");
                 Console.Write("Eingabe:");
                 HauptAusw = Console.ReadLine().ToLower();
 
