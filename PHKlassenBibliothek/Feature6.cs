@@ -1,159 +1,217 @@
+using System.ComponentModel.Design;
+
 namespace PHKlassenBibliothek;
 
 internal class Feature6
 {
     internal static void Feature_6()
     {
-        bool exit = false;
         
-        do
-        {
-            (int, int) cPosBM = Console.GetCursorPosition();
+        
             Console.Clear();
+            bool exit = false;
 
-            Console.WriteLine("Willkommen beim Rechner von Volumen von geometrischen Körpern!");
-
-            Console.WriteLine("Eingabe: exit\t->\tbeendet das Programm");
-
-            Console.WriteLine("Bitte wählen Sie ein geometrischen Körper:");
-            Console.WriteLine("1. Würfel");
-            Console.WriteLine("2. Quader");
-            Console.WriteLine("3. Kegel");
-            Console.WriteLine("4. Kugel");
-            Console.WriteLine("5. Zylinder\n\n");
-
-            Console.Write("Engabe:");
-            string option = Console.ReadLine().ToLower();
-
-            switch (option)
+            do
             {
-                case "1":
-                    BerechneWuerfelVolumen();
-                    break;
-                case "2":
-                    BerechneQuaderVolumen();
-                    break;
-                case "3":
-                    BerechneKegelVolumen();
-                    break;
-                case "4":
-                    BerechneKugelVolumen();
-                    break;
-                case "5":
-                    BerechneZylinderVolumen();
-                    break;
-                case "exit":
-                    exit = true;
-                    break;
-                default:
-                    Console.WriteLine("Ungültige Eingabe. Bitte erneut versuchen.");
-                    break;
-            }
+                Console.WriteLine();
+                Console.WriteLine("Willkommen beim Rechner von Volumen von geometrischen Körpern!");
+                Console.WriteLine();
+                Console.WriteLine("Eingabe: exit\t->\tbeendet das Programm");
 
-            Console.WriteLine("Drücken Sie eine beliebige Taste, um fortzufahren...");
-            Console.ReadKey();
-        } while (!exit);
-    }
+                Console.WriteLine("Bitte wählen Sie ein geometrischen Körper:");
+                Console.WriteLine("1. Würfel");
+                Console.WriteLine("2. Quader");
+                Console.WriteLine("3. Kegel");
+                Console.WriteLine("4. Kugel");
+                Console.WriteLine("5. Zylinder\n\n");
 
-    static void BerechneWuerfelVolumen()
+
+                Console.Write("Eingabe:");
+                string option = Console.ReadLine().ToLower();
+                Console.Clear();
+
+                
+                switch (option)
+                {
+                    case "1":
+                        exit = BerechneWuerfelVolumen();
+                        break;
+                    case "2":
+                        exit = BerechneQuaderVolumen();
+                        break;
+                    case "3":
+                        exit = BerechneKegelVolumen();
+                        break;
+                    case "4":
+                        exit = BerechneKugelVolumen();
+                        break;
+                    case "5":
+                        exit = BerechneZylinderVolumen();
+                        break;
+                    case "exit":
+                        exit = true;
+                        break;
+                    default:
+                        Console.WriteLine("Ungültige Eingabe. Bitte erneut versuchen.");
+                        break;
+                }
+                
+            } while (!exit);
+    
+        
+    }    
+    static bool BerechneWuerfelVolumen()
     {
+
         Console.Write("Bitte geben Sie die Seitelänge des Würfels ein: ");
-        if (double.TryParse(Console.ReadLine(), out double seitenlaenge))
+
+        string eingabe = Console.ReadLine();
+
+        if (double.TryParse(eingabe, out double seitenlaenge))
         {
             double volumen = Math.Pow(seitenlaenge, 3);
-            Console.WriteLine($"Das Volumen des Würfels beträgt: {volumen}");
+            Console.WriteLine($"Das Volumen des Würfels beträgt: {volumen:F4}");
+        }
+        else if(eingabe=="exit")
+        {
+            return true;
         }
         else
         {
-            Console.WriteLine("Ungültige Eingabe. Bitte erneut versuchen.");
+           Console.WriteLine("Ungültige Eingabe. Bitte erneut versuchen.");
         }
+        return false;
     }
 
-    static void BerechneQuaderVolumen()
+    static bool BerechneQuaderVolumen()
     {
         Console.Write("Länge des Quaders eingeben: ");
-        if (double.TryParse(Console.ReadLine(), out double laenge))
+        string eingabe1 = Console.ReadLine();
+        if (double.TryParse(eingabe1, out double laenge))
         {
             Console.Write("Breite des Quaders eingeben: ");
-            if (double.TryParse(Console.ReadLine(), out double breite))
+            string eingabe2 = Console.ReadLine();
+            if (double.TryParse(eingabe2, out double breite))
             {
                 Console.Write("Höhe des Quaders eingeben: ");
-                if (double.TryParse(Console.ReadLine(), out double hoehe))
+                string eingabe3 = Console.ReadLine();
+                if (double.TryParse(eingabe3, out double hoehe))
                 {
                     double volumen = laenge * breite * hoehe;
-                    Console.WriteLine($"Das Volumen des Quaders beträgt: {volumen}");
+                    Console.WriteLine($"Das Volumen des Quaders beträgt: {volumen:F4}");
+                }
+                else if (eingabe3=="exit")
+                {
+                    return true;
                 }
                 else
                 {
                     Console.WriteLine("Ungültige Eingabe. Bitte erneut versuchen.");
                 }
             }
+            else if (eingabe2=="exit")
+            {
+                return true;
+            }
             else
             {
                 Console.WriteLine("Ungültige Eingabe. Bitte erneut versuchen.");
             }
         }
+        else if (eingabe1=="exit")
+        {
+            return true;
+        }
         else
         {
             Console.WriteLine("Ungültige Eingabe. Bitte erneut versuchen.");
         }
+        return false;
     }
 
-    static void BerechneKegelVolumen()
+    static bool BerechneKegelVolumen()
     {
         Console.Write("Radius des Kegels eingeben: ");
-        if (double.TryParse(Console.ReadLine(), out double radius))
+        string eingabe4 = Console.ReadLine();
+        if (double.TryParse(eingabe4, out double radius))
         {
             Console.Write("Höhe des Kegels eingeben: ");
-            if (double.TryParse(Console.ReadLine(), out double hoehe))
+            string eingabe5 = Console.ReadLine();
+            if (double.TryParse(eingabe5, out double hoehe))
             {
                 double volumen = Math.PI * Math.Pow(radius, 2) * (hoehe / 3);
-                Console.WriteLine($"Das Volumen des Kegels beträgt: {volumen}");
+                Console.WriteLine($"Das Volumen des Kegels beträgt: {volumen:F4}");
+            }
+            else if (eingabe5=="exit")
+            {
+                return true;
             }
             else
             {
                 Console.WriteLine("Ungültige Eingabe. Bitte erneut versuchen.");
             }
         }
+        else if (eingabe4=="exit")
+        {
+            return true;
+        }
         else
         {
             Console.WriteLine("Ungültige Eingabe. Bitte erneut versuchen.");
         }
+        return false;
     }
 
-    static void BerechneKugelVolumen()
+    static bool BerechneKugelVolumen()
     {
         Console.Write("Radius der Kugel eingeben: ");
-        if (double.TryParse(Console.ReadLine(), out double radius))
+        string eingabe6 = Console.ReadLine();
+        if (double.TryParse(eingabe6, out double radius))
         {
             double volumen = (4.0 / 3) * Math.PI * Math.Pow(radius, 3);
-            Console.WriteLine($"Das Volumen der Kugel beträgt: {volumen}");
+            Console.WriteLine($"Das Volumen der Kugel beträgt: {volumen:F4}");
+        }
+        else if (eingabe6=="exit")
+        {
+            return true;
         }
         else
         {
             Console.WriteLine("Ungültige Eingabe. Bitte erneut versuchen.");
         }
+        return false;
     }
 
-    static void BerechneZylinderVolumen()
+    static bool BerechneZylinderVolumen()
     {
         Console.Write("Radius des Zylinders eingeben: ");
-        if (double.TryParse(Console.ReadLine(), out double radius))
+        string eingabe7 = Console.ReadLine();
+        if (double.TryParse(eingabe7, out double radius))
         {
             Console.Write("Höhe des Zylinders eingeben: ");
-            if (double.TryParse(Console.ReadLine(), out double hoehe))
+            string eingabe8 = Console.ReadLine();
+            if (double.TryParse(eingabe8, out double hoehe))
             {
                 double volumen = Math.PI * Math.Pow(radius, 2) * hoehe;
-                Console.WriteLine($"Das Volumen des Zylinders beträgt: {volumen}");
+                Console.WriteLine($"Das Volumen des Zylinders beträgt: {volumen:F4}");
+            }
+            else if (eingabe8=="exit")
+            {
+                return true;
             }
             else
             {
                 Console.WriteLine("Ungültige Eingabe. Bitte erneut versuchen.");
             }
         }
+        else if (eingabe7=="exit")
+        {
+            return true;
+        }
         else
         {
             Console.WriteLine("Ungültige Eingabe. Bitte erneut versuchen.");
         }
+        return false;
     }
 }
