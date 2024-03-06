@@ -1,9 +1,11 @@
 
+using System.Diagnostics.CodeAnalysis;
 using System.Diagnostics.Tracing;
 using System.Globalization;
 using System.Net;
 using System.Net.WebSockets;
 using System.Reflection.Metadata;
+using System.Timers;
 
 namespace PHKlassenBibliothek;
 
@@ -19,8 +21,7 @@ internal class Feature8
         do{
 			Console.WriteLine($"Willkommen bei Physik für Anfänger!");
 			Console.ReadLine();
-
-			Console.WriteLine("\n\nIm Bereich Physik bieten wir weitere Funktionen: \n" +
+			Console.WriteLine("\n\nIm Bereich Physik bieten wir Funktionen wie: \n" +
 					"1. Atom und Kernenergie\n" +
 					"2. Astronomie\n" +
 					"3. Radioaktivität\n" +
@@ -39,7 +40,7 @@ internal class Feature8
 					"15. Thermodynamik\n" +
 					"16. Mechanik\n");
 
-
+			Console.WriteLine($"Wenn Sie das Programm erneut starten möchten tippen Sie Exit ein!");
 			
 			Console.WriteLine($"Geben Sie ihr gewünschtes Thema ein:");
 			string Physik_Lexikon = Console.ReadLine();
@@ -118,7 +119,7 @@ internal class Feature8
 			{
 				Console.WriteLine($"Kernphysik ausführung:");
 				Console.WriteLine($"Definition: Kernphysik erforscht Eigenschaften und Verhalten von Atomkernen, einschließlich ihrer Struktur, Stabilität und Reaktionen.");
-				Console.WriteLine($"Aufbau: Der Atomkern besteht aus Protonen (positiv geladen) und Neutronen (neutral). Kernphysik analysiert Kernreaktionen, wie Fusion und Spaltung, dieEnergie freisetzen.");
+				Console.WriteLine($"Aufbau: Der Atomkern besteht aus Protonen (positiv geladen) und Neutronen (neutral). Kernphysik analysiert Kernreaktionen, wie Fusion und Spaltung, die Energie freisetzen.");
 			}
 			else if(Physik_Lexikon == "Temperatur")
 			{
@@ -149,18 +150,23 @@ internal class Feature8
 				Console.WriteLine($"Mechanik ausführug:");
 				Console.WriteLine($"Definition: Mechanik beschäftigt sich mit den Gesetzen der Bewegung und Kräfte, die auf Körper wirken.");
 				Console.WriteLine($"Aufbau: Klassische Mechanik behandelt makroskopische Objekte und ba t auf den Gesetzen von Newton. Quantenmechanik ist die Mechanik auf subatomar Ebene und beschreibt das Verhalten von Elementarteilchen.");  
+			
+			}
+			else if (Physik_Lexikon == "exit")
+			{
+				return;
 			}
 			else
 			{
 				Console.WriteLine($"Fehler");
-			}
-			Console.ReadLine();
-		
+	
+			}			
+	
 		} while (true);	
 	} 
-}     
+}       
 
-        
+
               
             
 		   
