@@ -81,17 +81,19 @@ internal class Feature7
                  {
                     Console.WriteLine("Ungültige Eingabe für die Gravitationskraft. Bitte geben Sie eine Zahl ein:");
                     gravitationseingabe = Console.ReadLine();
+
                     if (gravitationseingabe == "exit")
-                  {
-                     Console.Clear();
-                     return;
-                  }
+                    {
+                       Console.Clear();
+                        return;
+                    }
+                
                  }
                 
-                Planet neu_planet = new Planet
-                {
-                    Name = name_neu,
-                    Gravitation = gravitation_neu
+                Planet neu_planet = new Planet 
+                { 
+                    Name = name_neu, 
+                    Gravitation = gravitation_neu 
                 };
                 planeten.Add(neu_planet);
             }
