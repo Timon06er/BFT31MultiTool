@@ -34,8 +34,7 @@ internal class Feature19
 {
     internal static void Feature_19()
     {
-        
-    class Program
+        class Program
     {
 
         static double AnzahldergüterImmobilie0 = 0;
@@ -43,6 +42,7 @@ internal class Feature19
         static double AnzahldergüterImmobilie2 = 0;
         static double AnzahldergüterImmobilie3 = 0;
         static double AnzahldergüterImmobilie4 = 0;
+        static double AnzahldergüterImmobilie5 = 0;
         static double AnzahlderWertgegenstände0 = 0;
         static double AnzahlderWertgegenstände1 = 0;
         static double AnzahlderWertgegenstände2 = 0;
@@ -52,22 +52,10 @@ internal class Feature19
         static double AnzahlderWertgegenstände6 = 0;
         static double AnzahlderWertgegenstände7 = 0;
         static double AnzahlderWertgegenstände8 = 0;
-        static double Material1 = 0;
-        static double Material2 = 0;
-        static double Material3 = 0;
-        static double Material4 = 0;
-        static double Material5 = 0;
-        static double Material6 = 0;
-        static double Material7 = 0;
-        static double Material8 = 0;
-        static double Material9 = 0;
-        static double Material10 = 0;
+    
 
 
-
-
-
-        static double kapital = 10000000.0;
+        static double kapital = 10000.0;
         static List<Stock> stocks = new List<Stock>();
         static List<LuxuryItem> luxuryItems = new List<LuxuryItem>();
         static void Main()
@@ -119,7 +107,7 @@ internal class Feature19
 
                     case "3":
                         Console.Clear();
-                        LuxuryItemMenu();
+                        BuyLuxuryItemMenu();
                         break;
 
                     case "4":
@@ -178,8 +166,7 @@ internal class Feature19
                 Console.WriteLine($"{stock.Name}: Preis {stock.Price:C2} | Menge {stock.Menge}");
             }
         }
-
-            static void BuyStock()
+        static void BuyStock()
             {
             while (true)
             {
@@ -206,8 +193,11 @@ internal class Feature19
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Ungültige Auswahl! Bitte geben Sie eine gültige Nummer ein.");
                     Console.ResetColor();
+                    Console.ForegroundColor= ConsoleColor.White;
                     Console.Write("Wähle eine Option aus (1 - {0}): ", stocks.Count + 1);
-                }
+                    Console.ResetColor();
+                }   
+
 
                 if (option == stocks.Count + 1)
                 {
@@ -243,20 +233,17 @@ internal class Feature19
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.Clear();
                     Console.WriteLine($"Gekauft {quantityToBuy} {stocks[indexToBuy].Name}-Aktien für {totalCost:C2}");
+                    UpdateStockPrices();
+                    UpdateLuxuryItemsValue();
                 }
 
-                UpdateStockPrices();
-                UpdateLuxuryItemsValue();
+                
+                
                 return;
             }
             }
-
-
-
-
-
         static void SellStock()
-    {
+        {
         Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("Deine Aktien zum Verkauf:");
         Console.ResetColor();
@@ -278,8 +265,8 @@ internal class Feature19
 
         if (userInput == "5")
         {
-            Console.Clear(); // Lösche die Konsolenausgabe
-            return; // Zurück zum Hauptmenü
+            Console.Clear();
+            return; 
         }
 
         int indexToSell;
@@ -318,13 +305,9 @@ internal class Feature19
         Console.Clear();
         Console.WriteLine($"Verkauft {quantityToSell} {stocks[indexToSell].Name}-Aktien für {totalEarnings:C2}");
         UpdateStockPrices();
-    }
-
-
-
-        
-
-        static void LuxuryItemMenu()
+        UpdateLuxuryItemsValue();
+        }      
+        static void BuyLuxuryItemMenu()
         {
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Verfügbare Option:");
@@ -373,7 +356,6 @@ internal class Feature19
 
             }
         }
-
         static void BuyLuxuryItemImmobilien()
         {
             Console.ForegroundColor = ConsoleColor.White;
@@ -389,10 +371,12 @@ internal class Feature19
             Thread.Sleep(200);
             Console.WriteLine("5. Luxusimmobilie  - 3.000.000");
             Thread.Sleep(200);
-            Console.WriteLine("5. Palast  - 12.000.000");
-            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("6. Palast  - 12.000.000");
+            Console.ForegroundColor = ConsoleColor.White;
             Thread.Sleep(200);
-            Console.WriteLine("6. Zurück zum Hauptmenü");
+            Console.WriteLine("7. Info");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("8. Zurück zum Hauptmenü");
             Console.ResetColor();
 
             string luxusGutEingabe = Console.ReadLine();
@@ -470,14 +454,33 @@ internal class Feature19
                         break;
                     }
 
+                case "6":
+                    if (AnzahldergüterImmobilie5 == 0)
+                    {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    BuyLuxuryItem("Palast", 12000000);
+                    AnzahldergüterImmobilie4 = +1;
+                    break;
+                    }
+                    else
+                {
+                    Fehlerausgabe();
+                    Console.ResetColor();
+                    break;
+                }
 
 
+                case "7":
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("Kaufen sie sich Immobilien die im  Wert steigen und verkaufen sie es wieder für profit.Wichtig! Man kann nur eine Immobilie von einer art besitzen");
+                    BuyLuxuryItemImmobilien();
                     break;
 
-                case "6":
+                case "8":
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Zurück zum Hauptmenü");
-                    PrintStatus();
+                    Console.Clear();
                     break;
 
 
@@ -511,8 +514,11 @@ internal class Feature19
             Console.WriteLine("8. Königsegg  - 1.200.000");
             Thread.Sleep(200);
             Console.WriteLine("9. Bugatti  - 3.600.000");
-            Console.ForegroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.White;
             Thread.Sleep(200);
+            Console.WriteLine("10.Info");
+            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("11. Zurück zum Hauptmenü");
             Console.ResetColor();
 
@@ -619,11 +625,11 @@ internal class Feature19
                         break;
                     }
                 case "8":
-                    if (AnzahlderWertgegenstände0 == 0)
+                    if (AnzahlderWertgegenstände7 == 0)
                     {
                         Console.ForegroundColor = ConsoleColor.Green;
                         BuyLuxuryItem("Königsegg", 1200000);
-                        AnzahldergüterImmobilie0 = +1;
+                        AnzahlderWertgegenstände7 = +1;
                         break;
                     }
                     else
@@ -633,11 +639,11 @@ internal class Feature19
                         break;
                     }
                 case "9":
-                    if (AnzahlderWertgegenstände0 == 0)
+                    if (AnzahlderWertgegenstände8 == 0)
                     {
                         Console.ForegroundColor = ConsoleColor.Green;
                         BuyLuxuryItem("Bugatti", 3600000);
-                        AnzahldergüterImmobilie0 = +1;
+                        AnzahlderWertgegenstände8 = +1;
                         break;
                     }
                     else
@@ -648,9 +654,18 @@ internal class Feature19
                     }
 
                 case "10":
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("Kaufen sie sich Autos, und nach einiger Zeit können sie diese Autos teurer verkaufen. Wichtig! Man kann nur ein Auto von einer sorte kaufen");
+                    Console.ResetColor();
+                    Thread.Sleep(400);
+                    BuyLuxuryItemWertgegenstände();
+                    break;
+
+                case "11":
+                    Console.ResetColor();
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Zurück zum Hauptmenü");
-                    PrintStatus();
                     break;
 
 
@@ -658,17 +673,13 @@ internal class Feature19
                     Console.Clear();
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Ungültige Eingabe. Bitte wähle eine der verfügbaren Optionen.");
-                    BuyLuxuryItemImmobilien();
+                    BuyLuxuryItemWertgegenstände();
                     break;
 
 
             }
 
         }
-
-
-
-
         static void BuyLuxuryItem(string itemName, double price)
         {
             if (kapital >= price)
@@ -753,9 +764,6 @@ internal class Feature19
 
 
         }
-
-
-
         static void SellLuxuryItem(string itemName, double initialPrice)
         {
             LuxuryItem luxuryItem = luxuryItems.Find(item => item.Name == itemName);
@@ -776,7 +784,6 @@ internal class Feature19
                 Thread.Sleep(200);
             }
         }
-
         static void SellLuxuryItemImmobilien()
         {
             Console.ForegroundColor = ConsoleColor.White;
@@ -837,7 +844,6 @@ internal class Feature19
                     break;
             }
         }
-
         static void SellLuxuryItemWertgegenstände()
         {
             Console.ForegroundColor = ConsoleColor.White;
@@ -941,8 +947,12 @@ internal class Feature19
             Console.WriteLine("11.Saphier - 1000 ");
             Console.ResetColor();
             Thread.Sleep(200);
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("12. Infos");
+            Console.ResetColor();
+            Thread.Sleep(200);
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("12. Zurück zum Hauptmenü");
+            Console.WriteLine("13. Zurück zum Hauptmenü");
             Console.ResetColor();
             string eingabe = Console.ReadLine();
             switch (eingabe)
@@ -982,9 +992,16 @@ internal class Feature19
 
                     NachMengeFragenUndKaugen("Saphier", 1000);
                     break;
-                case "12":
+                case"12":
                     Console.Clear();
-                    Console.WriteLine("10. Zurück zum Hauptmenü");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("Kaufe Materialien, die im preis steigen werden. Du kannst von dennen so viele Kaufen wie du willst , und auch so oft du willst.");
+                    break;
+
+                case "13":
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("13. Zurück zum Hauptmenü");
                     Console.ResetColor();
                     break;
                 default:
@@ -1050,28 +1067,29 @@ internal class Feature19
         }
         static void NachMengeFragenUndKaugen(string itemName, double price)
         {
+        Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("Gib die Menge der zu Kaufenden Materialien an: ");
         double Anzahl = double.Parse(Console.ReadLine());
-        double totalPrice = Anzahl * price; 
+        double totalPrice = Anzahl * price;
 
         if (kapital >= totalPrice)
-            {
+        {
             kapital -= totalPrice;
             luxuryItems.Add(new LuxuryItem(itemName, totalPrice));
             Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"{Anzahl} {itemName} gekauft für insgesamt {totalPrice}");
             Thread.Sleep(1000);
-            }
+        }
         else
-            {
+        {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"Nicht genügend Kapital ");
             Thread.Sleep(1000);
-            }
         }
-            
-    
 
+        UpdateStockPrices();
+        }
         static void UpdateStockPrices()
         {
             Random random = new Random();
@@ -1082,20 +1100,23 @@ internal class Feature19
                 stock.Price += priceChange;
             }
         }
-
         static void Fehlerausgabe()
         {
+            Console.Clear();
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Du Kannst nicht 2 Luxusgüter  gleichzeitig besitzen");
             Console.ResetColor();
-            Console.Clear();
+
         }
         static void Infos()
         {
-            Console.WriteLine("Wertgegenstände´,Immobilien und Materialien steigen bekanntlich manchmal an Wert , mache es dir zu nutze und investiere in Wertgegenstände und verkaufe sie anschließlich für Profit");
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("Wertgegenstände,Immobilien und Materialien steigen bekanntlich manchmal an Wert , mache es dir zu nutze und investiere in Wertgegenstände und verkaufe sie anschließlich für Profit");
+            Console.ResetColor();
+        BuyLuxuryItemMenu();
         }
-        
-
     }
-        }
+
+    
 }
