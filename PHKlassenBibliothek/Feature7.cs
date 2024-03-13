@@ -57,7 +57,7 @@ internal class Feature7
             
             if(eingabe_auswahl=="1")
             {
-                //Neuer Listeneintrag
+               
                 Console.WriteLine("Geben Sie den Namen des neuen Planeten ein:");
                 string name_neu = Console.ReadLine();
                 if (name_neu == "exit")
@@ -99,7 +99,7 @@ internal class Feature7
             }
             else if(eingabe_auswahl=="2")
             {
-                //Gewicht berechnen
+              
                 bool flag_conv;
 
 
@@ -146,7 +146,7 @@ internal class Feature7
 
 
 
-                //Eingabe Gewicht
+            
                  
                 do{
                     (int, int) cPosBM = Console.GetCursorPosition();
