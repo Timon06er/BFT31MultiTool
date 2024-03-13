@@ -1023,18 +1023,56 @@ internal class Feature19
                 switch (eingabe)
                 {
                     case "1":
-                        Console.Clear();
-                        SellLuxuryItem("Cohle", 1);
-                        break;
-                    case "2":
-                        Console.Clear();
-                        SellLuxuryItem("Eisen", 1);
-                        break;
+                    Console.Clear();
+                    SellLuxuryItem("Cohle", 1);
+                    break;
+                case "2":
+                    Console.Clear();
+                    SellLuxuryItem("Eisen", 1);
+                    break;
+                case "3":
+                    Console.Clear();
+                    SellLuxuryItem("Gold", 1);
+                    break;
+                case "4":
+                    Console.Clear();
+                    SellLuxuryItem("Kupfer", 1);
+                    break;
+                case "5":
+                    Console.Clear();
+                    SellLuxuryItem("Zink", 1);
+                    break;
+                case "6":
+                    Console.Clear();
+                    SellLuxuryItem("Cobolt", 1);
+                    break;
+                case "7":
+                    Console.Clear();
+                    SellLuxuryItem("Lizium", 1);
+                    break;
+                case "8":
+                    Console.Clear();
+                    SellLuxuryItem("Diamanten", 1);
+                    break;
+                case "9":
+                    Console.Clear();
+                    SellLuxuryItem("Rubine", 1);
+                    break;
+                case "10":
+                    Console.Clear();
+                    SellLuxuryItem("Emeralds", 1);
+                    break;
+                case "11":
+                    Console.Clear();
+                    SellLuxuryItem("Saphier", 1);
+                    break;
 
-
-
-
-
+                default:
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Ungültige Eingabe. Bitte wähle eine der verfügbaren Optionen.");
+                    BuyLuxuryItemRessourcen();
+                    break;
                 }
             }
             static void NachMengeFragenUndKaugen(string itemName, double price)
