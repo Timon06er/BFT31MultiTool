@@ -30,10 +30,10 @@ public class PHMenue
 
             //Beschreibung der Software.
             Console.WriteLine("\n\nIm Bereich Physik bieten wir weitere Funktionen: \n" +
-                              "1. Berechnung des Volumens von Polyedern\n" +
+                              "1. Volumens von Polyedern berechnen\n" +
                               "2. Gewicht auf anderen Planeten berechnen\n" +
                               "3. Physik Leksikon\n" +
-                              "4. Gravitation und Winkel berechnung\n" +
+                              "4. Gravitation und Winkel berechnen\n" +
                               "5. Vorsätze für Maßeinheiten umwandeln SI-Einheiten umrechen\n\n");
 
             string HauptAusw;
