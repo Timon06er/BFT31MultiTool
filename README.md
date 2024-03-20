@@ -46,23 +46,23 @@ Alle Teilnehmer die noch kein Feature eingereicht haben, sind dazu angehalten, z
 |                   |Kondensator/Ohmsches/Gesetz​/Leistungsgesetz|Entwickler       |@Salaabbad|Feature4              |
 |                   |           |Entwickler       |         |Feature5              |
 |		                |	          |              		|		      |		                   |		
-|**Physik**	        |Menü PY6 Volumen Von Würfeln, Kugeln, Pyramiden, und Prismen 	  |Teamkoordinator  | @anastasiiakhalaim |PHEntwicklung	,Feature|
+|**Physik**	        |Menü PY6 Volumen Von Würfeln, Kugeln, Pyramiden, und Prismen 	  |Teamkoordinator  | @anastasiiakhalaim |PHEntwicklung	,Feature6 |
 |		                | Gewicht auf anderen Planeten Berechnen           |Entwickler	      | @Alexknoppik       |Feature7 	 |	
 |		                |	  Infos zur aufbau und struktur der Materie         |Entwickler	      | @yagmurergin        |Feature8  | 
-|		                |           |Entwickler	      | @EnderK58        |Feature9     |  
-|		                |           |Entwickler       |         |Feature10             |		
+|		                | Gravitation und Winkel berechnung          |Entwickler	      | @EnderK58        |Feature9     |  
+|		                |Vorsätze Für Maßeinheiten umwandeln SI-Einheiten umrechnen           |Entwickler       | @Jason22669         |Feature10             |		
 |		                |	          |                 |         |                      |				
-|**Informatik**	    |Menü IT    |Teamkoordinator  |    @zhiqiangc67     |ITEntwicklung,Feature11|				
+|**Informatik**	    |Menü IT  ,Zahlengenerator  |Teamkoordinator  |    @zhiqiangc67     |ITEntwicklung,Feature11|				
 |		                |	   Password Checker       |Entwickler       |		@Timon06er      |Feature12             |		
 |		                |	          |Entwickler       |   @Speed-king      |Feature13             |	
 |		                |	          |Entwickler       |  @LucMey	      |Feature14             |			
 |		                |	          |Entwickler       |         |Feature15             |			
 |		                |	          |	                |		      |		                   |				
-|**Wirtschaft**	    |Menü WI    |Teamkoordinator  |@Amannat01|WIEntwicklung,Feature16|				
-|		                |           |Entwickler       |@MuhammedTR38|Feature17         |		
-|		                |	          |Entwickler       |@brianbmc16|Feature18           |		
-|		                |	          |Entwickler       |@Mamedderficker|Feature19       |	
-|		                |	          |Entwickler       |@Salemweeyo|Feature20           |	
+|**Wirtschaft**	    |Menü WI,Nebenkostenrechner   |Teamkoordinator  |@Amannat01|WIEntwicklung,Feature16|				
+|		                |   Zinsrechner               |Entwickler       |@MuhammedTR38|Feature17         |		
+|		                |	     Kreditrechner          |Entwickler       |@brianbmc16|Feature18           |		
+|		                |Aktien Spiel                 |Entwickler       |@Mamedderficker|Feature19       |	
+|		            Bestellverwaltungssymstem         |Entwickler       |@Salemweeyo|Feature20           |	
 |		                |	          |	              	|		      |                   	 |					
 |**Mathematik**	    |Menü MT    |Teamkoordinator  | @can827       |MAEntwicklung,Feature21|				
 |		                |Linare Funktion           |Entwickler       | @aliaaalmustafa      |Feature22             |		
