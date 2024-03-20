@@ -61,12 +61,13 @@ public class MAMenue
 
                 case "3":
                     Console.Clear();
-                    //Hier das Mathematikmenü aufrufen
+                    //Hier Feature1 aufrufen
+                    Feature24.Feature_24();
                     break;
 
                 case "4":
                     Console.Clear();
-                    //Hier das Physikmenü aufrufen
+ 
                     break;
 
                 case "5":
