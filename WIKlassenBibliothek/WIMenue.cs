@@ -41,11 +41,13 @@ public class WIMenue
 
                 //Eingabeaufforderung 
                 Console.WriteLine("Wählen Sie eine der folgenden Themenbereiche:\n");
+
                 Console.WriteLine("\t1 - Nebenkostenrechner");
                 Console.WriteLine("\t2 - Zinsrechner");
                 Console.WriteLine("\t3 - Kreditrechner");
                 Console.WriteLine("\t4 - Aktienspiel");
                 Console.WriteLine("\t5 - Bestellverwaltungssystem \n");
+
                 Console.Write("Eingabe:");
                 HauptAusw = Console.ReadLine().ToLower();
 
@@ -68,10 +70,13 @@ public class WIMenue
                     //Hier das Mathematikmenü aufrufenc
                     break;
 
-                case "4":
-                    Console.Clear();
-                    //Hier das Physikmenü aufrufen
-                    break;
+
+                    case "4":
+                        Console.Clear();
+                        //Hier das Physikmenü aufrufen
+                        Feature19.Feature_19();
+                        break;
+
 
                 case "5":
                     Console.Clear();
@@ -91,8 +96,10 @@ public class WIMenue
 
                     KonsolenExtrasBibliothek.ConsoleExtras.ClearCurrentConsoleLine(cPosBM.Item2, cPosAM.Item2);
 
+
                     break;
             }
+
 
         } while (!Exit);
 
