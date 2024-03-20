@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Figgle;
-using ETKlassenBibliothek;
-using ITKlassenBibliothek;
+using WIKlassenBibliothek;
 
 
 namespace MultiTool
@@ -84,7 +84,10 @@ namespace MultiTool
 
                     case "w":
                         Console.Clear();
-                        //Hier das Wirtschaftsmenü aufrufen
+                        //Hier das Mathematikmenü aufrufen
+                        WIMenue.WISubMenue();
+
+
                         break;
 
                     case "exit":
