@@ -1,20 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Figgle;
-using WIKlassenBibliothek;
-
-
-namespace MultiTool
+﻿using Figgle;
+namespace ITKlassenBibliothek;
+public class ITMenue
 {
-    internal class Hauptmenue
+    public static void ITSubMenue()
     {
-        public static void HauptmenueAufruf()
-        {
-            bool Exit = false;
+        bool Exit = false;
 
             do
             {
@@ -25,13 +15,13 @@ namespace MultiTool
 
                 //ASCII art Logo wird erzeugt.
                 Console.WriteLine
-                    (FiggleFonts.Slant.Render("BFTMultiTool"));
+                    (FiggleFonts.Slant.Render("Informatik"));
 
                 //Konsolentitel wird geändert.
                 Console.Title = "BFTMultiTool";
 
                 Console.WriteLine("------------------------------------------------------------------------------------\n" +
-                                  "                              >>> Hauptmenü <<<\n" +
+                                  "                              >>> IT Submenü <<<\n" +
                                   "------------------------------------------------------------------------------------\n\n");
 
                 Console.WriteLine("Eingabe: exit\t->\tbeendet das Programm");
@@ -46,49 +36,39 @@ namespace MultiTool
 
                 //Eingabeaufforderung 
                 Console.WriteLine("Wählen Sie eine der folgenden Themenbereiche:\n");
-                Console.WriteLine("\te - Elektrotechnik");
-                Console.WriteLine("\ti - Informatik");
-                Console.WriteLine("\tm - Mathematik");
-                Console.WriteLine("\tp - Physik");
-                Console.WriteLine("\tw - Wirtschaft\n");
+                Console.WriteLine("\t1 - Random Number Generator");
+                Console.WriteLine("\t2 - Password Checker");
+                Console.WriteLine("\t3 - Mathematik");
+                Console.WriteLine("\t4 - Username Generator");
                 Console.Write("Eingabe:");
                 HauptAusw = Console.ReadLine().ToLower();
 
                 switch (HauptAusw)
                 {
-                    case "e":
+                    case "1":
                         Console.Clear();
-                        //Hier das Etechnikmenü aufrufen
-                        ETMenue.ETSubMenue();
+                       
+                        Feature11.Feature_11();
+
                         break;
 
-                    case "i":
+                    case "2":
                         Console.Clear();
-                        //Hier das Informationstechnikmenü aufrufen
-                        ITMenue.ITSubMenue();
+                        Feature12.Feature_12();
+                        break;
+
+                    case "3":
+                        Console.Clear();
                         
-
+                        // Feature13.Feature_13();
                         break;
 
-                    case "m":
+                    case "4":
                         Console.Clear();
-                        //Hier das Mathematikmenü aufrufen
-                        MAKlassenBibliothek.MAMenue.MASubMenue();
+                        
+                        Feature14.Feature_14();
                         break;
 
-                    case "p":
-                        Console.Clear();
-                        PHKlassenBibliothek.PHMenue.PHSubMenue();
-                        //Hier das Physikmenü aufrufen
-                        break;
-
-                    case "w":
-                        Console.Clear();
-                        //Hier das Mathematikmenü aufrufen
-                        WIMenue.WISubMenue();
-
-
-                        break;
 
                     case "exit":
                         Exit = true;
@@ -108,6 +88,5 @@ namespace MultiTool
             } while (!Exit);
 
 
-        }
     }
 }
