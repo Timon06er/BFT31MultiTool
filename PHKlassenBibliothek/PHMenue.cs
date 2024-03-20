@@ -50,33 +50,35 @@ public class PHMenue
                     Feature6.Feature_6();
                     break;
 
+                case "2":
+                    Console.Clear();
+                    //Alex
+                    Feature7.Feature_7();
+                    break;
 
-                  case "2":
-                      Console.Clear();
-                      //Alex
-                      Feature7.Feature_7();
-                      break;
-
-                    case "3":
-                        Console.Clear();
-                        Feature8.Feature_8();
-                        //Ezgi
-                        break;
+                case "3":
+                    Console.Clear();
+                    Feature8.Feature_8();
+                    //Ezgi
+                    break;
                 
-                    case "4":
-                        Console.Clear();
-                        Feature9.Feature_9();
-                        //Ender
-                        break;
-                    case "5":
-                        Console.Clear();
-                        //Jason
-                        break;
-                    case "subexit":
+                case "4":
+                    Console.Clear();
+                    Feature9.Feature_9();
+                    //Ender
+                    break;
+
+                case "5":
+                    Console.Clear();
+                    //Jason
+                    break;
+
+                case "subexit":
                     Console.Clear();
                     Exit=true;
                     break;
-                    default:
+
+                default:
 
                     Console.WriteLine("Ungültige Eingabe");
                     Console.ReadKey();
@@ -89,3 +91,5 @@ public class PHMenue
             }
 
         } while (!Exit);
+    }
+}
