@@ -36,7 +36,7 @@ public class ITMenue
 
                 //Eingabeaufforderung 
                 Console.WriteLine("Wählen Sie eine der folgenden Themenbereiche:\n");
-                Console.WriteLine("\t1 - Random Wheel Number Generator");
+                Console.WriteLine("\t1 - Random Number Generator");
                 Console.WriteLine("\t2 - Password Checker");
                 Console.WriteLine("\t3 - Mathematik");
                 Console.WriteLine("\t4 - Username Generator");
