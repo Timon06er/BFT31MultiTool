@@ -41,6 +41,7 @@ public class PHMenue
             Console.Write("Eingabe:");
             HauptAusw = Console.ReadLine().ToLower();
 
+
             switch (HauptAusw)
             {
                 case "1":
@@ -61,19 +62,21 @@ public class PHMenue
                         Feature8.Feature_8();
                         //Ezgi
                         break;
-
-                case "4":
-                    Console.Clear();
-                    //Ender
-                    break;
-
-
-                case "subexit":
+                
+                    case "4":
+                        Console.Clear();
+                        Feature9.Feature_9();
+                        //Ender
+                        break;
+                    case "5":
+                        Console.Clear();
+                        //Jason
+                        break;
+                    case "subexit":
                     Console.Clear();
                     Exit=true;
-                    //Jason
                     break;
-                default:
+                    default:
 
                     Console.WriteLine("Ungültige Eingabe");
                     Console.ReadKey();
@@ -86,8 +89,3 @@ public class PHMenue
             }
 
         } while (!Exit);
-
-
-        
-    }
-}
