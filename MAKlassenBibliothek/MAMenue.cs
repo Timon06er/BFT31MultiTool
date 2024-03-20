@@ -68,7 +68,10 @@ public class MAMenue
 
                 case "4":
                     Console.Clear();
- 
+
+                       //Hier Feature1 aufrufen
+                        Feature22.Feature_22();
+
                     break;
 
                 case "5":
