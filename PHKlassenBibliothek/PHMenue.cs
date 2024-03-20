@@ -48,15 +48,18 @@ public class PHMenue
                     Feature6.Feature_6();
                     break;
 
-                case "2":
-                    Console.Clear();
-                    //Alex
-                    break;
+
+                  case "2":
+                      Console.Clear();
+                      //Alex
+                      Feature7.Feature_7();
+                      break;
 
                 case "3":
                     Console.Clear();
                     //Ezgi
                     break;
+
 
                 case "4":
                     Console.Clear();
