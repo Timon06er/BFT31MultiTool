@@ -4,34 +4,39 @@ public class WIMenue
 {
     public static void WISubMenue()
     {
- bool Exit = false;
+        bool Exit = false;
 
-            do
-            {
+        do
+        {
 
-                (int, int) cPosBM = Console.GetCursorPosition();
+            (int, int) cPosBM = Console.GetCursorPosition();
 
-                Console.WriteLine();
+            Console.WriteLine();
 
-                //ASCII art Logo wird erzeugt.
-                Console.WriteLine
-                    (FiggleFonts.Slant.Render("Wirtschaft"));
+            //ASCII art Logo wird erzeugt.
+            Console.WriteLine
+                (FiggleFonts.Slant.Render("Wirtschaft"));
 
-                //Konsolentitel wird geändert.
-                Console.Title = "BFTMultiTool";
+            //Konsolentitel wird geändert.
+            Console.Title = "BFTMultiTool";
+
 
                 Console.WriteLine("------------------------------------------------------------------------------------\n" +
                                   "                              >>> WI-Hauptmenü <<<\n" +
                                   "------------------------------------------------------------------------------------\n\n");
 
-                Console.WriteLine("Eingabe: exit\t->\tbeendet das Programm");
+
+            Console.WriteLine("Eingabe: exit\t->\tbeendet das Programm");
+
 
                 //Beschreibung der Software.
                 Console.WriteLine("\n\nMit der Software 'BFTMulti-Tool'finden Sie die berreiche Kreditrechner,Nebenkostenrechner,ein Aktien Spiel,Bestellverwaltungssystem und einen Zinsrechner.\n" +
                                   "Diese vereinfachen ihr privates Leben und mit dem Aktien Spiel können Sie einen Einblick rein werfen wie man in Aktien investiert. Diese Aufgaben\n" +
                                   "stehen Ihnen kostenlos zur Verfügung.\n\n");
 
-                string HauptAusw;
+
+            string HauptAusw;
+
 
 
                 //Eingabeaufforderung 
@@ -44,50 +49,52 @@ public class WIMenue
                 Console.Write("Eingabe:");
                 HauptAusw = Console.ReadLine().ToLower();
 
-                switch (HauptAusw)
-                {
-                    case "1":
-                        Console.Clear();
-                        //Hier das Etechnikmenü aufrufen
-                        break;
 
-                    case "2":
-                        Console.Clear();
-                        //Hier das Informationstechnikmenü aufrufen
-                        break;
+            switch (HauptAusw)
+            {
+                case "1":
+                    Console.Clear();
+                    //Hier das Etechnikmenü aufrufen
+                    break;
 
-                    case "3":
-                        Console.Clear();
-                        //Hier das Mathematikmenü aufrufenc
-                        break;
+                case "2":
+                    Console.Clear();
+                    Feature17.Feature_17();
+                    //Hier das Informationstechnikmenü aufrufen
+                    break;
 
-                    case "4":
-                        Console.Clear();
-                        //Hier das Physikmenü aufrufen
-                        break;
+                case "3":
+                    Console.Clear();
+                    //Hier das Mathematikmenü aufrufenc
+                    break;
 
-                    case "5":
-                        Console.Clear();
-                        //Hier das Wirtschaftsmenü aufrufen
-                        //Aufruf Feature20
-                        break;
+                case "4":
+                    Console.Clear();
+                    //Hier das Physikmenü aufrufen
+                    break;
 
-                    case "exit":
-                        Exit = true;
-                        break;
-                    default:
+                case "5":
+                    Console.Clear();
+                    //Hier das Wirtschaftsmenü aufrufen
+                    //Aufruf Feature20
+                    break;
 
-                        Console.WriteLine("Ungültige Eingabe");
-                        Console.ReadKey();
+                case "exit":
+                    Exit = true;
+                    break;
+                default:
 
-                        (int, int) cPosAM = Console.GetCursorPosition();
+                    Console.WriteLine("Ungültige Eingabe");
+                    Console.ReadKey();
 
-                        KonsolenExtrasBibliothek.ConsoleExtras.ClearCurrentConsoleLine(cPosBM.Item2, cPosAM.Item2);
+                    (int, int) cPosAM = Console.GetCursorPosition();
 
-                        break;
-                }
+                    KonsolenExtrasBibliothek.ConsoleExtras.ClearCurrentConsoleLine(cPosBM.Item2, cPosAM.Item2);
 
-            } while (!Exit);
+                    break;
+            }
+
+        } while (!Exit);
 
     }
 }
