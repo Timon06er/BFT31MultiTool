@@ -1,62 +1,68 @@
 ﻿namespace PHKlassenBibliothek;
 using Figgle;
+using PHKlassenBibliothek;
 
 public class PHMenue
 {
     public static void PHSubMenue()
     {
+        Console.Clear();
+        bool Exit = false;
 
-            bool Exit = false;
+        do
+        {
 
-            do
+            (int, int) cPosBM = Console.GetCursorPosition();
+
+            Console.WriteLine();
+
+            //ASCII art Logo wird erzeugt.
+            Console.WriteLine
+                (FiggleFonts.Slant.Render("Physik"));
+
+            //Konsolentitel wird geändert.
+            Console.Title = "BFTMultiTool";
+
+            Console.WriteLine("------------------------------------------------------------------------------------\n" +
+                              "                              >>> PH-Submenü <<<\n" +
+                              "------------------------------------------------------------------------------------\n\n");
+
+            Console.WriteLine("Eingabe: subexit\t->\tbeendet das Programm");
+
+            //Beschreibung der Software.
+            Console.WriteLine("\n\nIm Bereich Physik bieten wir weitere Funktionen: \n" +
+                              "1. Volumens von Polyedern berechnen\n" +
+                              "2. Gewicht auf anderen Planeten berechnen\n" +
+                              "3. Physik Leksikon\n" +
+                              "4. Gravitation und Winkel berechnen\n" +
+                              "5. Vorsätze für Maßeinheiten umwandeln SI-Einheiten umrechen\n\n");
+
+            string HauptAusw;
+            Console.Write("Eingabe:");
+            HauptAusw = Console.ReadLine().ToLower();
+
+
+            switch (HauptAusw)
             {
+                case "1":
+                    Console.Clear();
+                    //Anastasiia
+                    Feature6.Feature_6();
+                    break;
 
-                (int, int) cPosBM = Console.GetCursorPosition();
 
-                Console.WriteLine();
-
-                //ASCII art Logo wird erzeugt.
-                Console.WriteLine
-                    (FiggleFonts.Slant.Render("Physik"));
-
-                //Konsolentitel wird geändert.
-                Console.Title = "BFTMultiTool";
-
-                Console.WriteLine("------------------------------------------------------------------------------------\n" +
-                                  "                              >>> PH-Submenü <<<\n" +
-                                  "------------------------------------------------------------------------------------\n\n");
-
-                Console.WriteLine("Eingabe: subexit\t->\tbeendet das Programm");
-
-                //Beschreibung der Software.
-                Console.WriteLine("\n\nIm Bereich Physik bieten wir weitere Funktionen: \n" +
-                                  "1. Berechnung des Volumens von Polyedern\n" +
-                                  "2. Gewicht auf anderen Planeten berechnen\n" +
-                                  "3. Infos zur Aufbau und Struktur der Materie\n" +
-                                  "4. Gravitation und Winkel berechnung\n" +
-                                  "5. Vorsätze für Maßeinheiten umwandeln SI-Einheiten umrechen\n\n");
-
-                string HauptAusw;
-                Console.Write("Eingabe:");
-                HauptAusw = Console.ReadLine().ToLower();
-
-                switch (HauptAusw)
-                {
-                    case "1":
-                        Console.Clear();
-                        //Anastasiia
-                        break;
-
-                    case "2":
-                        Console.Clear();
-                        //Alex
-                        break;
+                  case "2":
+                      Console.Clear();
+                      //Alex
+                      Feature7.Feature_7();
+                      break;
 
                     case "3":
                         Console.Clear();
+                        Feature8.Feature_8();
                         //Ezgi
                         break;
-
+                
                     case "4":
                         Console.Clear();
                         Feature9.Feature_9();
@@ -67,25 +73,19 @@ public class PHMenue
                         //Jason
                         break;
                     case "subexit":
-                        Console.Clear();
-                        Exit=true;
-                        //Jason
-                        break;
+                    Console.Clear();
+                    Exit=true;
+                    break;
                     default:
 
-                        Console.WriteLine("Ungültige Eingabe");
-                        Console.ReadKey();
+                    Console.WriteLine("Ungültige Eingabe");
+                    Console.ReadKey();
 
-                        (int, int) cPosAM = Console.GetCursorPosition();
+                    (int, int) cPosAM = Console.GetCursorPosition();
 
-                        KonsolenExtrasBibliothek.ConsoleExtras.ClearCurrentConsoleLine(cPosBM.Item2, cPosAM.Item2);
+                    KonsolenExtrasBibliothek.ConsoleExtras.ClearCurrentConsoleLine(cPosBM.Item2, cPosAM.Item2);
 
-                        break;
-                }
+                    break;
+            }
 
-            } while (!Exit);
-
-
-        
-    }
-}
+        } while (!Exit);
