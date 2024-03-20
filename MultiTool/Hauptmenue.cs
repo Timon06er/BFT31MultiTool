@@ -6,6 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Figgle;
 using WIKlassenBibliothek;
+using ETKlassenBibliothek;
+using ITKlassenBibliothek;
+using PHKlassenBibliothek;
 
 
 namespace MultiTool
