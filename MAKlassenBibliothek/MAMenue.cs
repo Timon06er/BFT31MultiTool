@@ -56,23 +56,28 @@ public class MAMenue
 
                 case "2":
                     Console.Clear();
-                    //Hier das Informationstechnikmenü aufrufen
+                       //Hier Feature1 aufrufen
+                        Feature25.Feature_25();
                     break;
 
                 case "3":
                     Console.Clear();
-                    //Hier das Mathematikmenü aufrufen
+                    //Hier Feature1 aufrufen
+                    Feature24.Feature_24();
                     break;
 
                 case "4":
                     Console.Clear();
+
                        //Hier Feature1 aufrufen
                         Feature22.Feature_22();
+
                     break;
 
                 case "5":
                     Console.Clear();
-                    //Hier das Wirtschaftsmenü aufrufen
+                       //Hier Feature1 aufrufen
+                        Feature23.Feature_23();
                     break;
 
                 case "exit":
