@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 
 
 // //Die Größe des Konsolenfensters wird an den Bildschirm angepasst.
