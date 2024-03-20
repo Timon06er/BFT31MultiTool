@@ -64,6 +64,10 @@ public class ETMenue
                     //Hier Feature4 aufrufen 
                     Feature4.Feature_4();
                     break;
+                case "subexit":
+                    Exit = true;
+                    break;
+                default:
               
                     Console.WriteLine("Ungültige Eingabe");
                     Console.ReadKey();
