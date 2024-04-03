@@ -56,7 +56,7 @@ internal class Feature19
     static List<LuxuryItem> luxuryItems = new List<LuxuryItem>();
 
 
-    static void Feature_19()
+    public static void Feature_19()
     {
 
         Console.ForegroundColor = ConsoleColor.White;

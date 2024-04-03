@@ -1,49 +1,9 @@
-namespace MAKlassenBibliothek;
-
+namespace WIKlassenBibliothek;
+using System;
+using System.Threading;
 internal class Feature20
 {
     internal static void Feature_20()
-    {
-
-           using System;
-using System.Threading; 
-class Produkt
-{
-    public string Name;
-    public double[] Preisstufen;
-
-    public Produkt(string name, double[] preisstufen)
-    {
-        Name = name;
-        Preisstufen = preisstufen;
-    }
-
-    public double HolePreis(int menge)
-    {
-        return Preisstufen[Preisstufen.Length - 1] * menge; // Nehmen Sie den höchsten Preisstufenwert
-    }
-}
-
-class Bestellung
-{
-    private double GesamtPreis;
-
-    public void ProduktHinzufügen(Produkt produkt, int menge)
-    {
-        GesamtPreis += produkt.HolePreis(menge);
-    }
-
-    public void DruckeRechnung()
-    {
-        Console.WriteLine("Rechnung:");
-        Console.WriteLine("==========");
-        Console.WriteLine($"Gesamtpreis: {GesamtPreis:C}");
-    }
-}
-
-class Programm
-{
-    static void Main(string[] args)
     {
         Console.WriteLine("Willkommen bei der Bestellverwaltung");
 
@@ -57,7 +17,8 @@ class Programm
         Bestellung bestellung = new Bestellung();
 
         while (true)
-        {   Console.ForegroundColor = ConsoleColor.White;
+        {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Bitte wählen Sie ein Produkt:");
             Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.Green;
@@ -94,8 +55,8 @@ class Programm
             Produkt ausgewähltesProdukt = null;
             switch (auswahl)
             {
-                case 1: 
-                    ausgewähltesProdukt = auto; 
+                case 1:
+                    ausgewähltesProdukt = auto;
                     break;
                 case 2: ausgewähltesProdukt = haus; break;
                 case 3: ausgewähltesProdukt = villa; break;
@@ -126,5 +87,40 @@ class Programm
 
             bestellung.ProduktHinzufügen(ausgewähltesProdukt, menge);
         }
+    }
+}
+
+
+class Produkt
+{
+    public string Name;
+    public double[] Preisstufen;
+
+    public Produkt(string name, double[] preisstufen)
+    {
+        Name = name;
+        Preisstufen = preisstufen;
+    }
+
+    public double HolePreis(int menge)
+    {
+        return Preisstufen[Preisstufen.Length - 1] * menge; // Nehmen Sie den höchsten Preisstufenwert
+    }
+}
+
+class Bestellung
+{
+    private double GesamtPreis;
+
+    public void ProduktHinzufügen(Produkt produkt, int menge)
+    {
+        GesamtPreis += produkt.HolePreis(menge);
+    }
+
+    public void DruckeRechnung()
+    {
+        Console.WriteLine("Rechnung:");
+        Console.WriteLine("==========");
+        Console.WriteLine($"Gesamtpreis: {GesamtPreis:C}");
     }
 }
