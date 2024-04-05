@@ -56,6 +56,7 @@ public class WIMenue
             {
                 case "1":
                     Console.Clear();
+
                     //Hier das Etechnikmenü aufrufen
                     break;
 
@@ -67,6 +68,7 @@ public class WIMenue
 
                 case "3":
                     Console.Clear();
+                    Feature18.Feature_18();
                     //Hier das Mathematikmenü aufrufenc
                     break;
 

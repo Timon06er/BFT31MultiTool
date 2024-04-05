@@ -1,10 +1,10 @@
 using System;
  
-class Program
+internal class Feature18
 
 {
 
-    static void Main()
+    internal static void Feature_18()
 
     {
 
