@@ -63,12 +63,15 @@ namespace MultiTool
                         Console.Clear();
                         //Hier das Etechnikmenü aufrufen
                         ETMenue.ETSubMenue();
+                        Console.Clear();
+
                         break;
 
                     case "i":
                         Console.Clear();
                         //Hier das Informationstechnikmenü aufrufen
                         ITMenue.ITSubMenue();
+                        Console.Clear();
                         
 
                         break;
@@ -77,11 +80,15 @@ namespace MultiTool
                         Console.Clear();
                         //Hier das Mathematikmenü aufrufen
                         MAKlassenBibliothek.MAMenue.MASubMenue();
+                        Console.Clear();
+
                         break;
 
                     case "p":
                         Console.Clear();
                         PHKlassenBibliothek.PHMenue.PHSubMenue();
+                        Console.Clear();
+
                         //Hier das Physikmenü aufrufen
                         break;
 
@@ -89,6 +96,8 @@ namespace MultiTool
                         Console.Clear();
                         //Hier das Mathematikmenü aufrufen
                         WIMenue.WISubMenue();
+                        Console.Clear();
+
 
 
                         break;

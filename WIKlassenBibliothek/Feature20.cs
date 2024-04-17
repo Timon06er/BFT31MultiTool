@@ -75,7 +75,7 @@ internal class Feature20
             int menge;
             while (true)
             {
-                Console.Write($"Bitte geben Sie die Menge für '{ausgewähltesProdukt.Name}' ein (0 zum Abbrechen): ");
+                Console.WriteLine($"Bitte geben Sie die Menge für '{ausgewähltesProdukt.Name}' ein (0 zum Abbrechen): ");
                 if (int.TryParse(Console.ReadLine(), out menge) && menge >= 0)
                     break;
                 else

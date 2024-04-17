@@ -49,13 +49,16 @@ public class ITMenue
                         Console.Clear();
                        
                         Feature11.Feature_11();
+                    Console.Clear();
 
-                        break;
+
+                    break;
 
                     case "2":
                         Console.Clear();
                         Feature12.Feature_12();
-                        break;
+                    Console.Clear();
+                    break;
 
                     case "3":
                         Console.Clear();
@@ -67,7 +70,8 @@ public class ITMenue
                         Console.Clear();
                         
                         Feature14.Feature_14();
-                        break;
+                    Console.Clear();
+                    break;
 
 
                     case "exit":
@@ -86,6 +90,7 @@ public class ITMenue
                 }
 
             } while (!Exit);
+
 
 
     }
